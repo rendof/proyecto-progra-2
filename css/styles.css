@@ -1,5 +1,56 @@
 body{
-    background-color: black;
+    background: linear-gradient(to bottom right, black, rgb(48, 46, 46),rgb(75, 74, 74));
     font-family: 'Montserrat', sans-serif;
     color: white;
+    margin: 0px;
+    margin: 20px;
+}
+/*mobile version*/
+/*header*/
+.header{
+    display: grid;
+    grid-template-rows: 80px 50px;
+    text-align: -webkit-center;
+    align-items: center;
+}
+.logo{
+    width: 320px;
+}
+.buscador{
+    background-color: rgba(187, 187, 187, 0.74);
+    margin: 0px;
+    border-radius: 15px;
+    font-weight: lighter;
+}
+/*container*/
+.container{
+    display: grid;
+    grid-template-rows: repeat(3, 180px);margin-bottom: 80px;
+    margin-top: 20px;
+}
+.music-container{
+    display: grid;
+    grid-template-rows: 50px 108px ;
+}
+.title{
+    font-size: 40px;
+    font-weight: 200;
+    margin: 0px;
+}
+.content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+}
+.music{
+    background-color: rgb(161, 158, 158);
+}
+/*footer*/
+.footer{
+    height: 70px;
+    background: linear-gradient(to bottom, #ff1e56, #ffac41);
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
 }
