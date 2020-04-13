@@ -30,7 +30,7 @@ body{
 }
 .music-container{
     display: grid;
-    grid-template-rows: 50px 108px ;
+    grid-template-rows: 50px 108px;
 }
 .title{
     font-size: 40px;
@@ -44,6 +44,8 @@ body{
 }
 .music{
     background-color: rgb(161, 158, 158);
+    border-radius: 100px;
+    
 }
 /*footer*/
 .footer{
@@ -53,4 +55,5 @@ body{
     bottom: 0;
     right: 0;
     width: 100%;
+    text-align: center;
 }
