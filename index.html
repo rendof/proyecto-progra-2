@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/styles.css">
-    <!--tipografía-->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700&display=swap" rel="stylesheet"><!--tipografía-->
+    <script src="https://kit.fontawesome.com/a0c0bb4f74.js" crossorigin="anonymous"></script> <!--iconos-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>We Sound</title>
 </head>
@@ -12,11 +12,17 @@
     <!--header-->
     <header>
         <div class="header">
-            <img class="logo" src="img/logo.png"alt=""> <!--falta sacarle el fondo al logo-->
-            <h2 class="buscador">*acá va el buscador ponele*</h2>
+            <div class="superior">
+                <img class="img-barra" src="img/iconos/bars-solid.svg" alt="">
+                <img class="logo" src="img/logo transparente.png"alt="">
+            <div class="buscador">
+                <i id="lupa" class="fas fa-search"></i>
+                <h2 class="buscador-text">*acá va el buscador ponele*</h2> 
+            </div>
         </div>
     </header>
     <!--container-->
+    <img class="banner" src="img/Pink and Blue Galaxy Gaming Youtube Channel Art.png" alt="">
     <div class="container">
         <div class="music-container">
             <h2 class="title">Tracks</h2>
@@ -43,11 +49,25 @@
             </div>
         </div>
     </div>
+    <!--barra de navegación-->
+    <div class="nav">
+        <article class="links">
+            <i id="icon" class="fas fa-headphones-alt"></i>
+            <h2 class="detalle-icon">Playlist</h2>        
+        </article>   
+        <article class="links">    
+            <i id="icon" class="fas fa-home"></i>
+            <h2 class="detalle-icon">Home</h2>
+        </article>    
+            <article class="links">
+            <i id="icon" class="fas fa-compact-disc"></i>
+            <h2 class="detalle-icon">Géneros</h2>
+        </article>
+    </div>
     <!--footer-->
     <footer>
-        <div class="footer">
-            <p>*el footer se queda fijado*</p>
-        </div>
+        <p class="deezer">Powered by: Deezer</p>
+        <p class="creditos">Desarrollado por<br/>Martina Pawluk, Francisco José Rendo y Tomás Giampaoletti</p>
     </footer>
 </body>
 </html>
