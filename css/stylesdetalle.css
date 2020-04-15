@@ -1,0 +1,130 @@
+
+body{
+    background-color: black;
+}
+
+
+.header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color:grey;
+}
+
+.logo{
+    width: 320px;
+}
+.buscador{
+    width: 320px;
+}
+
+.divcontainer{
+    display: grid;
+    grid-template-rows: 4fr 2fr 2fr 2fr 1fr;
+
+}
+
+.badbunny{
+    background-color: grey;
+    margin: 15px;
+    padding: 10px;
+
+}
+
+.hits{
+    grid-template-rows: 2fr 2fr 2fr 2fr 2fr;
+    background-color:grey;
+}
+
+.tittlehits{
+    background-color: white;
+}
+.cancion1{
+    background-color: white;
+}
+
+.cancion2 {
+    background-color: white;
+}
+.cancion3{
+    background-color: white;}
+
+.cancion4{
+    background-color: white;
+}
+
+
+
+.albumes{
+    grid-template-rows: 1fr 2fr;
+    background-color:grey;
+}
+.tittlealbumes{
+    background-color: coral;
+}
+.dosalbumes{
+    display: grid;
+    grid-template-columns: 50% 50%; 
+}
+.album1{
+    background-color: coral;
+}
+.album2{
+    background-color: coral;
+}
+
+
+
+
+.playlists{
+    background-color: grey;
+    grid-template-rows: 1fr 1fr;
+}
+
+.tittleplaylists{
+    background-color: white;
+}
+
+.tresplaylists{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.playlist1{
+    background-color: white;
+}
+
+.playlist2{
+    background-color: white;
+}
+.playlist3{
+    background-color: white;
+}
+
+
+
+
+.otrosintereses{
+    background-color: grey;
+    grid-template-rows: 1fr 1fr;
+}
+.tittleintereses{
+    background-color: coral;
+}
+.cincoartistas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.artista1{
+    background-color: coral;
+}
+.artista2{
+    background-color: coral;
+}
+.artista3{
+    background-color: coral;
+}
+.artista4{
+    background-color: coral;
+}
+.artista5{
+    background-color: coral;
+}
