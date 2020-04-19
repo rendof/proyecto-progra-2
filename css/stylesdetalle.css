@@ -4,52 +4,73 @@ body{
 }
 
 
-.header{
+.header1{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color:grey;
+    grid-template-columns: 50% 50%;
+
+}
+
+.buscador{
+    width: 100%;
+    background-color: coral;
+    border-radius: 50%;
+    text-align: center;
 }
 
 .logo{
     width: 320px;
-}
-.buscador{
-    width: 320px;
+    background-color: black;
 }
 
 .divcontainer{
     display: grid;
-    grid-template-rows: 4fr 2fr 2fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    box-sizing: border-box;
 
 }
 
 .badbunny{
+    display: grid;
+    grid-template-columns: 50% 50%;
     background-color: grey;
     margin: 15px;
     padding: 10px;
-
+    box-sizing: border-box;
+}
+.BPrincipal {
+    
+    border-radius: 60%;
+    box-sizing: border-box;
 }
 
+.DescripcionBBprincipal {
+    box-sizing: border-box;
+}
+
+
+
 .hits{
+    display: grid;
     grid-template-rows: 2fr 2fr 2fr 2fr 2fr;
     background-color:grey;
 }
 
 .tittlehits{
-    background-color: white;
+    text-align: center;
 }
 .cancion1{
-    background-color: white;
+    width: 100%;
 }
 
 .cancion2 {
-    background-color: white;
+   width: 100%;
 }
 .cancion3{
-    background-color: white;}
+   width: 100%;
+}
 
 .cancion4{
-    background-color: white;
+    width: 100%;
 }
 
 
@@ -59,17 +80,23 @@ body{
     background-color:grey;
 }
 .tittlealbumes{
-    background-color: coral;
+   text-align: center;
 }
 .dosalbumes{
     display: grid;
     grid-template-columns: 50% 50%; 
+    box-sizing: border-box;
 }
-.album1{
+.YHL{
     background-color: coral;
+    width: 80%;
+    box-sizing: border-box;
 }
-.album2{
+
+.OASIS{
     background-color: coral;
+   box-sizing: border-box;
+   width: 80%;
 }
 
 
@@ -81,23 +108,23 @@ body{
 }
 
 .tittleplaylists{
-    background-color: white;
+    text-align: center;
 }
 
-.tresplaylists{
+.dosplaylists{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
 }
 .playlist1{
+    width: 80%;
     background-color: white;
 }
 
 .playlist2{
+    width: 80%;
     background-color: white;
 }
-.playlist3{
-    background-color: white;
-}
+
 
 
 
@@ -107,24 +134,22 @@ body{
     grid-template-rows: 1fr 1fr;
 }
 .tittleintereses{
-    background-color: coral;
+    text-align: center;
 }
 .cincoartistas{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    box-sizing: border-box;
 }
-.artista1{
-    background-color: coral;
+
+
+.becky{
+    box-sizing: border-box;
+    width: 80%;
+    border-radius: 50%;
 }
-.artista2{
-    background-color: coral;
-}
-.artista3{
-    background-color: coral;
-}
-.artista4{
-    background-color: coral;
-}
-.artista5{
-    background-color: coral;
+.daddy{
+    box-sizing: border-box;
+    width: 80%;
+    border-radius: 50%;
 }
