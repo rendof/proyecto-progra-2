@@ -66,7 +66,7 @@ body{
 }
 /*barra de navegación*/
 .nav{
-    height: 70px;
+    height: 60px;
     background: linear-gradient(to bottom, #ff1e56, #ffac41);
     position: fixed;
     bottom: 0;
@@ -74,6 +74,9 @@ body{
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+}
+div article a{
+    text-align: center;
 }
 .links{
     display: grid;
