@@ -36,7 +36,7 @@ body{
 /*container*/
 .container{
     display: grid;
-    grid-template-rows: repeat(3, 180px);
+    grid-template-rows: repeat(3, 1fr);
     padding: 40px;
     row-gap: 20px;
 }
@@ -46,7 +46,7 @@ body{
 }
 .music-container{
     display: grid;
-    grid-template-rows: 50px 108px;
+    grid-template-rows: 1fr 4fr;
     border-bottom: solid  rgba(187, 187, 187, 0.74) 1px;
 }
 .title{
@@ -57,12 +57,30 @@ body{
 .content{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 10px;
+}
+.music-artist{
+    display: grid;
+    grid-template-rows: 2fr 1fr;
 }
 .music{
-    background-color: rgb(161, 158, 158);
-    border-radius: 100px;
+    display: grid;
     
+}
+.portadas{
+    width: 120px;
+    height: 120px;
+}
+.artist-title{
+    margin: 0px;
+    font-weight: 600;
+    text-align: left;
+    line-height: 18px;
+}
+.artist-info{
+    margin: 0px;
+    font-size: 15px;
+    font-weight: 200;
+    vertical-align: bottom;
 }
 /*barra de navegación*/
 .nav{
@@ -100,10 +118,15 @@ footer{
     margin-left: 20px;
     margin-right: 20px;
     display: flex;
+    align-items: center;
 }
 footer p{
     margin: 0px;
+    margin-bottom: 5px;
     font-size: 10px;
+}
+.deezer{
+    width: 150px;
 }
 .deezer{
     color: rgba(255, 255, 255, 0.404);
