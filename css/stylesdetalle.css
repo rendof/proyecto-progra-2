@@ -1,25 +1,30 @@
 
 body{
-    background-color: black;
+    background: linear-gradient(to bottom right, black, rgb(48, 46, 46),rgb(75, 74, 74));
+    font-family: 'Montserrat', sans-serif;
+    color: white;
 }
 
 
 .header1{
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 3fr 1fr;
+    box-sizing: border-box;
 
 }
 
 .buscador{
     width: 100%;
-    background-color: coral;
-    border-radius: 50%;
     text-align: center;
+    border-radius: 15px;
+    background-color: grey;
 }
 
 .logo{
     width: 320px;
-    background-color: black;
+    padding: 20px;
+    box-sizing: border-box;
+    
 }
 
 .divcontainer{
@@ -32,19 +37,21 @@ body{
 .badbunny{
     display: grid;
     grid-template-columns: 50% 50%;
-    background-color: grey;
     margin: 15px;
     padding: 10px;
     box-sizing: border-box;
 }
 .BPrincipal {
     
-    border-radius: 60%;
+    border-radius: 50%;
     box-sizing: border-box;
+    width: 90%;
+    margin: auto;
 }
 
 .DescripcionBBprincipal {
     box-sizing: border-box;
+    margin: auto;
 }
 
 
@@ -52,32 +59,34 @@ body{
 .hits{
     display: grid;
     grid-template-rows: 2fr 2fr 2fr 2fr 2fr;
-    background-color:grey;
 }
 
 .tittlehits{
     text-align: center;
 }
 .cancion1{
-    width: 100%;
+    width: 95%;
+    margin: auto;
 }
 
 .cancion2 {
-   width: 100%;
+   width: 95%;
+   margin: auto;
 }
 .cancion3{
-   width: 100%;
+   width: 95%;
+   margin: auto;
 }
 
 .cancion4{
-    width: 100%;
+    width: 95%;
+    margin: auto;
 }
 
 
 
 .albumes{
     grid-template-rows: 1fr 2fr;
-    background-color:grey;
 }
 .tittlealbumes{
    text-align: center;
@@ -89,21 +98,23 @@ body{
 }
 .YHL{
     background-color: coral;
-    width: 80%;
+    width: 70%;
+    margin: auto;
     box-sizing: border-box;
 }
 
 .OASIS{
     background-color: coral;
+    margin: auto;
    box-sizing: border-box;
-   width: 80%;
+   width: 70%;
 }
 
 
 
 
 .playlists{
-    background-color: grey;
+    
     grid-template-rows: 1fr 1fr;
 }
 
@@ -116,13 +127,15 @@ body{
     grid-template-columns: 1fr 1fr;
 }
 .playlist1{
-    width: 80%;
+    width: 70%;
     background-color: white;
+    margin: auto;
 }
 
 .playlist2{
-    width: 80%;
+    width: 70%;
     background-color: white;
+    margin: auto;
 }
 
 
@@ -130,7 +143,6 @@ body{
 
 
 .otrosintereses{
-    background-color: grey;
     grid-template-rows: 1fr 1fr;
 }
 .tittleintereses{
@@ -145,11 +157,62 @@ body{
 
 .becky{
     box-sizing: border-box;
-    width: 80%;
+    width: 70%;
     border-radius: 50%;
+    margin: auto;
 }
 .daddy{
     box-sizing: border-box;
-    width: 80%;
+    width: 70%;
     border-radius: 50%;
+    margin: auto;
+}
+
+/*barra de navegación*/
+.nav{
+    height: 60px;
+    background: linear-gradient(to bottom, #ff1e56, #ffac41);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+div article a{
+    text-align: center;
+}
+.links{
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    align-items: center;
+}
+#icon{
+    font-size: 35px;
+    color: white;
+    text-align: center;
+}
+.detalle-icon{
+    margin: 0px;
+    font-size: 10px;
+    text-align: center;
+}
+/*footer*/
+footer{
+    border-top: solid  rgba(187, 187, 187, 0.74) 1px;
+    margin-bottom: 80px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+}
+footer p{
+    margin: 0px;
+    font-size: 10px;
+}
+.deezer{
+    color: rgba(255, 255, 255, 0.404);
+}
+.creditos{
+    flex: 1;
+    text-align: right;
+    font-size: 8px;
 }
