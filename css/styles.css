@@ -6,6 +6,7 @@ body{
 }
 /*mobile version*/
 /*header*/
+@media (min-width: 320px){
 .header{
     text-align: center;
     margin: 20px;
@@ -17,6 +18,7 @@ body{
 .img-barra{
     display: none;
 }
+
 .buscador{
     display: flex;
     background-color: rgba(187, 187, 187, 0.74);
@@ -62,9 +64,15 @@ body{
     display: grid;
     grid-template-rows: 2fr 1fr;
 }
+.music-artistas{
+    display: none;
+}
 .music{
     display: grid;
     
+}
+.music-768{
+    display: none;
 }
 .portadas{
     width: 120px;
@@ -136,3 +144,70 @@ footer p{
     text-align: right;
     font-size: 8px;
 }
+
+}
+
+@media (min-width: 768px) /* Tablet */
+{
+    .content{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .music-artistas{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+    }
+
+   .music-1024{
+       display: none;
+   }
+   
+    .container{
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+        padding: 30px;
+        row-gap: 5px;
+    }
+
+    .music-768{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding: 20px;
+        row-gap: 20px;
+    }
+    
+    }
+    @media (min-width:1024px) /*Compu*/ {
+
+        .content{
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            padding: 20px;
+            gap: 20px;
+        }
+    
+        .music-artistas{
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+        }
+       
+        .container{
+            display: grid;
+            grid-template-rows: repeat(6, 1fr);
+            padding: 30px;
+            row-gap: 5px;
+        }
+    
+        .music-1024{
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            padding: 20px;
+            row-gap: 20px;
+        }
+    }
+
+
