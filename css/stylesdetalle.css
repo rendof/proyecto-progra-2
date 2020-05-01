@@ -217,7 +217,7 @@ body{
 }
 .YHL{
     background-color: coral;
-    width: 70%;
+    width: 95%;
     box-sizing: border-box;
 }
 
@@ -225,7 +225,7 @@ body{
     background-color: coral;
    
    box-sizing: border-box;
-   width: 70%;
+   width: 95%;
 }
 
 .siempre{
@@ -255,13 +255,13 @@ body{
     grid-template-columns: 1fr 1fr;
 }
 .playlist1{
-    width: 70%;
+    width: 90%;
     background-color: white;
    
 }
 
 .playlist2{
-    width: 70%;
+    width: 90%;
     background-color: white;
    
 }
@@ -292,8 +292,6 @@ display: none;
     text-align: center;
     margin: 80px;
     box-sizing: border-box;
-    position: relative;
-    top: 50px;
 }
 .cincoartistas{
     display: grid;
@@ -304,13 +302,13 @@ display: none;
 
 .becky{
     box-sizing: border-box;
-    width: 70%;
+    width: 80%;
     border-radius: 50%;
    
 }
 .daddy{
     box-sizing: border-box;
-    width: 70%;
+    width: 80%;
     border-radius: 50%;
    
 }
@@ -385,7 +383,7 @@ footer p{
     }
     .siempre{
         display: grid;
-        width: 70%;
+        width: 95%;
         box-sizing: border-box;
 
     }
@@ -395,7 +393,7 @@ footer p{
    }
    .playlist3{
     display: grid;
-    width: 70%;
+    width: 90%;
    
     box-sizing: border-box;
    }
@@ -407,7 +405,7 @@ footer p{
    .lunay{
        display: grid;
       box-sizing: border-box;
-      width: 70%;
+      width: 80%;
       border-radius: 50%;
 
    }
@@ -423,7 +421,7 @@ footer p{
 
 .nometes{
         display: grid;
-        width: 70%;
+        width: 95%;
         box-sizing: border-box;
 }
 
@@ -433,14 +431,14 @@ footer p{
 }
 .playlist4{
     display: grid;
-    width: 70%;
+    width: 90%;
     background-color: white;
    
 }
 
 .playlist5{
     display: grid;
-    width: 70%;
+    width: 90%;
     background-color: white;
  
 }
