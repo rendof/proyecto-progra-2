@@ -12,13 +12,15 @@
 <body>
    
   <header>
-      <div class="header1"> 
-          <div class="buscador">
-          <i id="lupa" class="fas fa-search"></i>
-          <p>buscador</p>
-          </div> 
-          <img class="logo" src="img/logo transparente.png" alt="We + Sound">
-      </div>
+    <div class="header">
+        <div class="superior">
+            <img class="img-barra" src="img/iconos/bars-solid.svg" alt="">
+            <img class="logo" src="img/logo transparente.png"alt="">
+        <div class="buscador">
+            <i id="lupa" class="fas fa-search"></i>
+            <h2 class="buscador-text">*acá va el buscador ponele*</h2> 
+        </div>
+    </div>
   </header>
 
 
@@ -32,42 +34,56 @@
           <div class="DescripcionBBprincipal">
                <h2 class="artista">Artista</h2>
                <h1 class="tittle">Bad Bunny</h1>
-               <p class="descripcion del artista">Benito Antonio Martínez Ocasio, más conocido por su nombre artístico Bad Bunny, es un cantante y rapero puertorriqueño de género reguetón y trap</p>
-               <button> Reproducir</button> 
-               <button>Seguir</button>
+               <p class="descripcionartista">Benito Antonio Martínez Ocasio, más conocido por su nombre artístico Bad Bunny, es un cantante y rapero puertorriqueño de género reguetón y trap</p>
+               <div class="botones">
+                 <button class="reproducir"> Reproducir</button> 
+                 <button class="seguir">Seguir</button>
+               </div>
           </div>
 
        </div>
 
        <div class="hits">
         
-            <h3 class="tittlehits"> Hits</h3> 
+        <h3 class="tittlehits"> Hits</h3> 
+        <div class="callaita">
+            <p class="a"> Callaíta</p>
+         <audio class="cancion1" controls>
+             <source src="/MP4/ Callaíta-Bad Bunny.mp3">
+         </audio>
+        </div>
 
-            <audio class="cancion1" controls>
-                <source src="/MP4/ Callaíta-Bad Bunny.mp3">
-            </audio>
-            
-            <audio class="cancion2" controls>
+        <div class="lacancion">
+            <p class="b">LA CANCIÓN</p>
+          <audio class="cancion2" controls>
+              <source src="/MP4/LA CANCIÓN - J Balvin x Bad Bunny.mp3">
+          </audio>
+        </div>
 
-                <source src="/MP4/LA CANCIÓN - J Balvin x Bad Bunny.mp3">
-            </audio>
-
+        <div class="laultimavez">
+            <p class="c">La última vez</p>
             <audio class="cancion3" controls>
-                <source src="/MP4/La Última Vez.mp3">
+               <source src="/MP4/La Última Vez.mp3">
             </audio>
+      </div>
 
-            <audio class="cancion4" controls>
-                <source src="/MP4/Yo Perreo Sola.mp3">
-            </audio>
-
+      <div class="yoperreosola">
+          <p class="d">Yo perreo sola</p>
+           <audio class="cancion4" controls>
+               <source src="/MP4/Yo Perreo Sola.mp3">
+           </audio>
        </div>
 
+   </div>
+
        <div class="albumes">
-           <h3 class="tittlealbumes">Álbumes</h3>
+           <h3 class="tittlealbumes">Álbums</h3>
            <div class="dosalbumes">
 
               <img class="YHL" src="img/Album1.jpg" alt="Album YHLQMDLG"/>
               <img class="OASIS" src="img/album2.jpg" alt="Album OASIS">
+              <img class="siempre" src="img/x100pre.jpg" alt="Album x100pre">
+              <img class="nometes" src="img/nometes.jpg" alt="Album no metes cabra">
            </div>
        </div>
 
@@ -77,6 +93,10 @@
            <div class="dosplaylists">
            <img class="playlist1" src="img/playlist1.jpg" alt="playlist">
            <img class="playlist2" src="img/playlist2.jpg" alt="playlist">
+           <img class="playlist3" src="img/playlist3.jpg" alt="playlist">
+           <img class="playlist4" src="img/playlist4.png" alt="playlist">
+           <img class="playlist5" src="img/playlist5.jpeg" alt="playlist">
+
 
            </div>
        </div>
@@ -86,9 +106,11 @@
        <div class="otrosintereses">
            <h3 class="tittleintereses">También te puede interesar</h3>
            <div class="cincoartistas">  
-    
                 <img class="becky" src="img/beckyg1.webp" alt="Becky G">
                  <img class="daddy" src="img/daddyankee.jpg" alt="Daddy Yankee">
+                 <img class="lunay" src="img/Lunay.jpg" alt="Lunay">
+                 <img class="ozuna" src="img/Ozuna.jpg" alt="Ozuna">
+                 <img class="anuel" src="img/anuel.jpg" alt="Anuel">
                 
            </div>
        </div>
@@ -120,5 +142,7 @@
     <p class="deezer">Powered by: Deezer</p>
     <p class="creditos">Desarrollado por<br/>Martina Pawluk, Francisco José Rendo y Tomás Giampaoletti</p>
 </footer>
+
+
 </body>
 </html>

@@ -6,11 +6,33 @@ body{
 }
 
 
-.header1{
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    box-sizing: border-box;
+.header{
+    text-align: center;
+    margin: 20px;
+}
+.logo{
+    width: 320px;
+    margin-bottom: 15px;
+}
+.img-barra{
+    display: none;
+}
 
+.buscador{
+    display: flex;
+    background-color: rgba(187, 187, 187, 0.74);
+    border-radius: 15px;
+    height: 20px;
+    align-items: center;
+}
+#lupa{
+    margin-left: 10px;
+}
+.buscador-text{
+    margin: 0px;
+    font-weight: lighter;
+    font-size: 10px;
+    flex: 1;
 }
 
 .buscador{
@@ -50,9 +72,52 @@ body{
 }
 
 .DescripcionBBprincipal {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     box-sizing: border-box;
     margin: auto;
 }
+.artista{
+    text-align: right;
+   font-weight: lighter;
+}
+
+.tittle{
+    text-align: center;
+    font-size: 100px;
+    margin: auto;
+   
+}
+
+.descripcionartista{
+    text-align: center;
+    position: relative;
+    top: 50px;
+    margin: auto;
+}
+.botones{
+    text-align: center;
+    position: relative;
+    top: 50px;
+    margin: auto;
+}
+
+.reproducir{
+    background-color:white;
+    border: none;
+    font-size: 40px;
+    border-radius: 7px;
+}
+
+.seguir{
+    background-color: white;
+    border: none;
+    font-size: 40px;
+    border-radius: 7px;
+    
+}
+
+
 
 
 
@@ -63,19 +128,56 @@ body{
 
 .tittlehits{
     text-align: center;
+    margin: auto;
+}
+.callaita{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+   
+}
+.a{
+    text-align: left ;
+ 
+}
+
+.b{
+   text-align: left;
+}
+.c { 
+    text-align: left;
+}
+
+.d{
+    text-align: left;
 }
 .cancion1{
     width: 95%;
     margin: auto;
 }
 
+.lacancion{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
 .cancion2 {
    width: 95%;
    margin: auto;
 }
+
+.laultimavez{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
 .cancion3{
    width: 95%;
    margin: auto;
+}
+
+.yoperreosola{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
 }
 
 .cancion4{
@@ -85,11 +187,16 @@ body{
 
 
 
+
+
+
 .albumes{
     grid-template-rows: 1fr 2fr;
 }
 .tittlealbumes{
    text-align: center;
+   margin: 80px;
+   box-sizing: border-box;
 }
 .dosalbumes{
     display: grid;
@@ -110,6 +217,14 @@ body{
    width: 70%;
 }
 
+.siempre{
+    display: none;
+}
+
+.nometes{
+    display: none;
+}
+
 
 
 
@@ -120,6 +235,8 @@ body{
 
 .tittleplaylists{
     text-align: center;
+    margin: 80px;
+    box-sizing: border-box;
 }
 
 .dosplaylists{
@@ -138,6 +255,20 @@ body{
     margin: auto;
 }
 
+.playlist3{
+display: none;
+}
+
+.playlist4{
+display: none;
+}
+
+.playlist5{
+display: none;
+}
+
+
+
 
 
 
@@ -147,6 +278,10 @@ body{
 }
 .tittleintereses{
     text-align: center;
+    margin: 80px;
+    box-sizing: border-box;
+    position: relative;
+    top: 50px;
 }
 .cincoartistas{
     display: grid;
@@ -167,7 +302,17 @@ body{
     border-radius: 50%;
     margin: auto;
 }
+.lunay{
+    display: none;
+}
 
+.ozuna{
+    display: none;
+}
+
+.anuel{
+    display: none;
+}
 /*barra de navegación*/
 .nav{
     height: 60px;
@@ -198,6 +343,7 @@ div article a{
 }
 /*footer*/
 footer{
+    margin: 80px;
     border-top: solid  rgba(187, 187, 187, 0.74) 1px;
     margin-bottom: 80px;
     margin-left: 20px;
@@ -215,4 +361,106 @@ footer p{
     flex: 1;
     text-align: right;
     font-size: 8px;
+}
+
+@media only screen and (min-width: 768px){
+
+    
+
+    .dosalbumes{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .siempre{
+        display: grid;
+        width: 70%;
+        margin: auto;
+        box-sizing: border-box;
+
+    }
+   .dosplaylists{
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr;
+   }
+   .playlist3{
+    display: grid;
+    width: 70%;
+    margin: auto;
+    box-sizing: border-box;
+   }
+
+   .cincoartistas{
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr;
+   }
+   .lunay{
+       display: grid;
+      box-sizing: border-box;
+      width: 70%;
+      border-radius: 50%;
+      margin: auto;
+   }
+}
+
+
+@media only screen and (min-width: 1024px)
+{
+    .dosalbumes{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.nometes{
+        display: grid;
+        width: 70%;
+        margin: auto;
+        box-sizing: border-box;
+}
+
+.dosplaylists{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+}
+.playlist4{
+    display: grid;
+    width: 70%;
+    background-color: white;
+    margin: auto;
+}
+
+.playlist5{
+    display: grid;
+    width: 70%;
+    background-color: white;
+    margin: auto;
+}
+.cincoartistas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: auto;
+}
+.ozuna{
+    display: grid;
+    box-sizing: border-box;
+    width: 90%;
+    border-radius: 50%;
+    margin: auto;
+}
+.anuel{
+    display: grid;
+    box-sizing: border-box;
+    width: 90%;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.becky{
+    width: 90%;
+}
+.daddy{
+    width: 90%;
+}
+.lunay{
+    width: 90%;
+}
 }
