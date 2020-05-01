@@ -115,3 +115,69 @@ footer p{
     text-align: right;
     font-size: 8px;
 }
+
+@media (min-width:1024px){
+    /*HEADER*/
+    .header{
+        width: 100%;
+        display: flex;
+    }
+    .signin{
+        display: block;
+        text-align: right;
+        flex: 1;
+        margin-right: 40px;
+    }
+    .signinp{
+        font-weight: 400;
+        margin: 0px;
+    }
+    .logo{
+        display: none;
+    }
+    .buscador{
+        width: 400px;
+        height: 29px;
+    }
+        /*navegador*/
+    .nav{
+        width: 125px;
+        height: 100%;
+        left: 0;
+        display: flex;
+        position: fixed;
+        flex-direction: column;
+        align-items: baseline;
+    }
+    .logonav{
+        margin-top: 25px;
+        margin-left: 5px;
+        margin-right: 5px;
+        display: block;
+        width: 115px;
+        margin-bottom: 25px;
+    }
+    .links{
+        display: flex;
+        margin-left: 5px;
+        margin-top: 20px;
+        align-items: baseline;
+    }
+    .detalle-icon{
+        font-size: 20px;
+    }
+    #icon{
+        font-size: 20px;
+    }
+
+    /*conteiner*/
+    body{
+        margin-left: 120px;
+    }
+    .content{
+        grid-template-columns: repeat(6, 1fr);
+    }
+    .music-1024{
+        display: grid;
+    }
+}
