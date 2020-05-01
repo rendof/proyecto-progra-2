@@ -70,9 +70,21 @@ body{
     display: grid;
     grid-template-rows: 2fr 1fr;
 }
+.music-artist a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    margin: 0px;
+}
 .music{
     display: grid;
     width: 120px;
+}
+.music a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    margin: 0px;
 }
 .music-artist768{
     display: grid;
@@ -106,6 +118,7 @@ body{
     font-weight: 200;
     vertical-align: bottom;
 }
+
 /*barra de navegación*/
 .logocontainer{
     display: none;
@@ -200,6 +213,10 @@ footer p{
         .signinp{
             font-weight: 400;
             margin: 0px;
+        }
+        .img-barra{
+            display: grid;
+
         }
         .logo{
             display: none;
