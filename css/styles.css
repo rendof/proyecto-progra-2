@@ -6,7 +6,6 @@ body{
 }
 /*mobile version*/
 /*header*/
-@media (min-width: 320px){
 .header{
     text-align: center;
     margin: 20px;
@@ -18,7 +17,6 @@ body{
 .img-barra{
     display: none;
 }
-
 .buscador{
     display: flex;
     background-color: rgba(187, 187, 187, 0.74);
@@ -34,6 +32,9 @@ body{
     font-weight: lighter;
     font-size: 10px;
     flex: 1;
+}
+.signin{
+    display: none;
 }
 /*container*/
 .container{
@@ -64,14 +65,18 @@ body{
     display: grid;
     grid-template-rows: 2fr 1fr;
 }
-.music-artistas{
-    display: none;
-}
 .music{
     display: grid;
-    
+    grid-template-rows: 3fr 1fr 1fr;
 }
 .music-768{
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    display: none;
+}
+.music-1024{
+    display: grid;
+    grid-template-rows: 2fr 1fr;
     display: none;
 }
 .portadas{
@@ -91,6 +96,9 @@ body{
     vertical-align: bottom;
 }
 /*barra de navegación*/
+.logonav{
+    display: none;
+}
 .nav{
     height: 60px;
     background: linear-gradient(to bottom, #ff1e56, #ffac41);
@@ -145,69 +153,85 @@ footer p{
     font-size: 8px;
 }
 
-}
-
-@media (min-width: 768px) /* Tablet */
-{
+/* Tablet */
+@media (min-width: 768px){
     .content{
-        display: grid;
         grid-template-columns: repeat(4, 1fr);
-        padding: 20px;
-        gap: 20px;
     }
-
-    .music-artistas{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-
-    }
-
-   .music-1024{
-       display: none;
-   }
-   
-    .container{
-        display: grid;
-        grid-template-rows: repeat(4, 1fr);
-        padding: 30px;
-        row-gap: 5px;
-    }
-
     .music-768{
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        padding: 20px;
-        row-gap: 20px;
     }
-    
-    }
-    @media (min-width:1024px) /*Compu*/ {
+}
 
+ /*Compu*/ 
+@media (min-width:1024px){
+           /*HEADER*/
+        .header{
+            width: 100%;
+            display: flex;
+        }
+        .signin{
+            display: block;
+            text-align: right;
+            flex: 1;
+            margin-right: 40px;
+        }
+        .signinp{
+            font-weight: 400;
+            margin: 0px;
+        }
+        .logo{
+            display: none;
+        }
+        .buscador{
+            width: 400px;
+            height: 29px;
+        }
+            /*navegador*/
+        .nav{
+            width: 125px;
+            height: 100%;
+            left: 0;
+            display: flex;
+            position: fixed;
+            flex-direction: column;
+            align-items: baseline;
+        }
+        .logonav{
+            margin-top: 25px;
+            margin-left: 5px;
+            margin-right: 5px;
+            display: block;
+            width: 115px;
+            margin-bottom: 25px;
+        }
+        .links{
+            display: flex;
+            margin-left: 5px;
+            margin-top: 20px;
+            align-items: baseline;
+        }
+        .detalle-icon{
+            font-size: 20px;
+        }
+        #icon{
+            font-size: 20px;
+        }
+
+        /*conteiner*/
+        body{
+            margin-left: 120px;
+        }
         .content{
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            padding: 20px;
-            gap: 20px;
-        }
-    
-        .music-artistas{
-            display: grid;
             grid-template-columns: repeat(6, 1fr);
         }
-       
-        .container{
-            display: grid;
-            grid-template-rows: repeat(6, 1fr);
-            padding: 30px;
-            row-gap: 5px;
-        }
-    
         .music-1024{
             display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            padding: 20px;
-            row-gap: 20px;
         }
-    }
+}
+
+
+
+
 
 
