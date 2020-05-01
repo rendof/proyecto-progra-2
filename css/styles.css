@@ -1,10 +1,10 @@
+/*mobile version*/
 body{
     background: linear-gradient(to bottom right, black, rgb(48, 46, 46),rgb(75, 74, 74));
     font-family: 'Montserrat', sans-serif;
     color: white;
     margin: 0px;
 }
-/*mobile version*/
 /*header*/
 .header{
     text-align: center;
@@ -40,7 +40,7 @@ body{
 .container{
     display: grid;
     grid-template-rows: repeat(3, 1fr);
-    padding: 40px;
+    padding: 20px;
     row-gap: 20px;
 }
 .banner{
@@ -60,6 +60,11 @@ body{
 .content{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    column-gap: 5px;
+}
+.tracks{
+    display: flex;
+    justify-content: space-between;
 }
 .music-artist{
     display: grid;
@@ -67,16 +72,22 @@ body{
 }
 .music{
     display: grid;
-    grid-template-rows: 3fr 1fr 1fr;
+    width: 120px;
 }
-.music-768{
+.music-artist768{
     display: grid;
     grid-template-rows: 2fr 1fr;
     display: none;
 }
-.music-1024{
+.music-artist1024{
     display: grid;
     grid-template-rows: 2fr 1fr;
+    display: none;
+}
+.music-768{
+    display: none;
+}
+.music-1024{
     display: none;
 }
 .portadas{
@@ -96,7 +107,7 @@ body{
     vertical-align: bottom;
 }
 /*barra de navegación*/
-.logonav{
+.logocontainer{
     display: none;
 }
 .nav{
@@ -108,15 +119,16 @@ body{
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    
 }
 div article a{
     text-align: center;
 }
 .links{
     display: grid;
-    grid-template-rows: 3fr 1fr;
     align-items: center;
 }
+
 #icon{
     font-size: 35px;
     color: white;
@@ -126,6 +138,12 @@ div article a{
     margin: 0px;
     font-size: 10px;
     text-align: center;
+}
+.nav a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    margin: 0px;
 }
 /*footer*/
 footer{
@@ -157,6 +175,9 @@ footer p{
 @media (min-width: 768px){
     .content{
         grid-template-columns: repeat(4, 1fr);
+    }
+    .music-artist768{
+        display: grid;
     }
     .music-768{
         display: grid;
@@ -192,41 +213,60 @@ footer p{
             width: 125px;
             height: 100%;
             left: 0;
-            display: flex;
             position: fixed;
-            flex-direction: column;
+            display: grid;
+            grid-template-rows: 120px repeat(3, 30px);
+            grid-template-columns: 1fr;
+            text-align: center;
             align-items: baseline;
+        }
+        .logocontainer{
+            display: block;
+            height: 100%;
+            align-items: center;
         }
         .logonav{
-            margin-top: 25px;
-            margin-left: 5px;
-            margin-right: 5px;
-            display: block;
-            width: 115px;
-            margin-bottom: 25px;
+            margin-top: 30px;
+            width: 75px
         }
         .links{
-            display: flex;
-            margin-left: 5px;
-            margin-top: 20px;
-            align-items: baseline;
+            display: grid;
+            grid-template-columns: 30px 90px;
+            grid-template-rows: 1fr;
+            column-gap: 5px;
+            align-items: center;
+            width: 100%;
+            height: 30px;
         }
+        .links:hover{
+            background-color:rgba(67, 67, 68, 0.185);        
+        }
+
         .detalle-icon{
-            font-size: 20px;
+            font-size: 15px;
+            text-align: left;
         }
         #icon{
-            font-size: 20px;
+            font-size: 15px;
         }
 
         /*conteiner*/
         body{
-            margin-left: 120px;
+            margin-left: 125px;
         }
         .content{
             grid-template-columns: repeat(6, 1fr);
         }
+        .music-artist1024{
+            display: grid;
+        }
         .music-1024{
             display: grid;
+        }
+        /*footer*/
+        footer{
+            margin-bottom: 10px;
+            margin-top: 20px;
         }
 }
 
