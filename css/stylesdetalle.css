@@ -20,13 +20,14 @@ body{
 
 .buscador{
     display: flex;
-    background-color: rgba(187, 187, 187, 0.74);
     border-radius: 15px;
     height: 20px;
     align-items: center;
+    
 }
 #lupa{
     margin-left: 10px;
+    color:white;
 }
 .buscador-text{
     margin: 0px;
@@ -39,7 +40,7 @@ body{
     width: 100%;
     text-align: center;
     border-radius: 15px;
-    background-color: grey;
+    border: solid 1px white;
 }
 
 .logo{
@@ -48,6 +49,9 @@ body{
     box-sizing: border-box;
     
 }
+
+
+
 
 .divcontainer{
     display: grid;
@@ -58,9 +62,9 @@ body{
 
 .badbunny{
     display: grid;
-    grid-template-columns: 50% 50%;
-    margin: 15px;
-    padding: 10px;
+    grid-template-columns: 1fr 1fr;
+    margin: 5px;
+    padding: 5px;
     box-sizing: border-box;
 }
 .BPrincipal {
@@ -77,6 +81,7 @@ body{
     box-sizing: border-box;
     margin: auto;
 }
+
 .artista{
     text-align: right;
    font-weight: lighter;
@@ -96,24 +101,29 @@ body{
     margin: auto;
 }
 .botones{
-    text-align: center;
+    text-align: right;
     position: relative;
     top: 50px;
     margin: auto;
 }
 
 .reproducir{
-    background-color:white;
-    border: none;
-    font-size: 40px;
-    border-radius: 7px;
+    border: solid 1px white;
+    background-color: transparent;
+    font-size: 35px;
+    color: white;
+    border-radius: 5px;
+    
 }
 
 .seguir{
-    background-color: white;
-    border: none;
-    font-size: 40px;
-    border-radius: 7px;
+    
+    border: solid 1px white;
+    background-color: transparent;
+    font-size: 35px;
+    color: white;
+    border-radius: 5px;
+    
     
 }
 
@@ -191,7 +201,9 @@ body{
 
 
 .albumes{
-    grid-template-rows: 1fr 2fr;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
 }
 .tittlealbumes{
    text-align: center;
@@ -206,13 +218,12 @@ body{
 .YHL{
     background-color: coral;
     width: 70%;
-    margin: auto;
     box-sizing: border-box;
 }
 
 .OASIS{
     background-color: coral;
-    margin: auto;
+   
    box-sizing: border-box;
    width: 70%;
 }
@@ -229,7 +240,7 @@ body{
 
 
 .playlists{
-    
+   display: grid;
     grid-template-rows: 1fr 1fr;
 }
 
@@ -246,13 +257,13 @@ body{
 .playlist1{
     width: 70%;
     background-color: white;
-    margin: auto;
+   
 }
 
 .playlist2{
     width: 70%;
     background-color: white;
-    margin: auto;
+   
 }
 
 .playlist3{
@@ -274,6 +285,7 @@ display: none;
 
 
 .otrosintereses{
+    display: grid;
     grid-template-rows: 1fr 1fr;
 }
 .tittleintereses{
@@ -294,13 +306,13 @@ display: none;
     box-sizing: border-box;
     width: 70%;
     border-radius: 50%;
-    margin: auto;
+   
 }
 .daddy{
     box-sizing: border-box;
     width: 70%;
     border-radius: 50%;
-    margin: auto;
+   
 }
 .lunay{
     display: none;
@@ -374,7 +386,6 @@ footer p{
     .siempre{
         display: grid;
         width: 70%;
-        margin: auto;
         box-sizing: border-box;
 
     }
@@ -385,7 +396,7 @@ footer p{
    .playlist3{
     display: grid;
     width: 70%;
-    margin: auto;
+   
     box-sizing: border-box;
    }
 
@@ -398,7 +409,7 @@ footer p{
       box-sizing: border-box;
       width: 70%;
       border-radius: 50%;
-      margin: auto;
+
    }
 }
 
@@ -413,7 +424,6 @@ footer p{
 .nometes{
         display: grid;
         width: 70%;
-        margin: auto;
         box-sizing: border-box;
 }
 
@@ -425,14 +435,14 @@ footer p{
     display: grid;
     width: 70%;
     background-color: white;
-    margin: auto;
+   
 }
 
 .playlist5{
     display: grid;
     width: 70%;
     background-color: white;
-    margin: auto;
+ 
 }
 .cincoartistas{
     display: grid;
@@ -444,14 +454,13 @@ footer p{
     box-sizing: border-box;
     width: 90%;
     border-radius: 50%;
-    margin: auto;
+    
 }
 .anuel{
     display: grid;
     box-sizing: border-box;
     width: 90%;
     border-radius: 50%;
-    margin: auto;
 }
 
 .becky{
