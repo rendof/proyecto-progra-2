@@ -2,6 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.3/dist/css/uikit.min.css" />
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.3/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.3/dist/js/uikit-icons.min.js"></script>
+    <!--CSS-->
     <link rel="stylesheet" href="css/styles.css">
     <!--tipografía-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700&display=swap" rel="stylesheet">
@@ -9,7 +15,9 @@
     <!--iconos-->
     <script src="https://kit.fontawesome.com/a0c0bb4f74.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>We Sound like music</title>
+    <!--JavaScript-->
+    <script src="js/index.js"></script>
+    <title>We Sound Like Music</title>
 </head>
 <body>
     <!--header-->
@@ -36,7 +44,7 @@
         </article>
         <article class="links">
             <a href="playlist.html">
-              <i id="icon" class="fas fa-headphones-alt"></i>
+                <i id="icon" class="fas fa-headphones-alt"></i>
             </a> 
             <a href="playlist.html" >
                 <h2 class="detalle-icon">PLAYLIST</h2>    
@@ -54,109 +62,55 @@
             <a href="generos.html">
                 <i id="icon" class="fas fa-compact-disc"></i>
             </a>
-            <a href="index.html.html" >
+            <a href="generos.html" >
                 <h2 class="detalle-icon">GENEROS</h2>    
             </a>
         </article>
     </div>
-    <!--container-->
-    <img class="banner" src="img/Pink and Blue Galaxy Gaming Youtube Channel Art.png" alt="">
+    <!--CONTAINER-->
+    <!--Carousell-->
+    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="center: true">
+        <ul class="uk-slider-items uk-grid">
+            <li class="uk-width-3-4">
+                <div class="uk-panel">
+                    <img src="img/Pink and Blue Galaxy Gaming Youtube Channel Art.png" alt="">
+                    <div class="uk-position-center uk-panel"><h1></h1></div>
+                </div>
+            </li>
+            <li class="uk-width-3-4">
+                <div class="uk-panel">
+                    <img src="img/DJ programacion.jpg" alt="">
+                    <div class="uk-position-center uk-panel"><h1></h1></div>
+                </div>
+            </li>
+        </ul>
+    
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+    
+    </div>
     <div class="container">
-        <div class="music-container borderright">
-            <h2 class="title">Artistas</h2>
-            <div class="content">
-                <div class="music-artist">
-                    <a href="detalle.html">
-                        <img class="portadas" src="img//Portadas/10.png" alt="">
-                    </a>
-                    <a href="detalle.html">
-                        <h3 class="artist-title">Bad Bunny</h3>
-                    </a> 
-                </div>
-                <div class="music-artist">
-                    <img class="portadas" src="img//Portadas/20.png" alt="">
-                    <h3 class="artist-title">J Balvin</h3>
-                </div>
-                <div class="music-artist">
-                    <img class="portadas" src="img//Portadas/30.png" alt="">
-                    <h3 class="artist-title">Maroon 5</h3>
-                </div>
-                <div class="music-artist768">
-                    <img class="portadas" src="img//Portadas/100.png" alt="">
-                    <h3 class="artist-title">Seru Giran</h3>
-                </div>
-                <div class="music-artist1024">
-                    <img class="portadas" src="img//Portadas/200.png" alt="">
-                    <h3 class="artist-title">Ozuna</h3>
-                </div>
-                <div class="music-artist1024">
-                    <img class="portadas" src="img//Portadas/300.png" alt="">
-                    <h3 class="artist-title">Kanye West</h3>
-                </div>
+        <!--Artistas-->
+        <div class = "music-container borderright">
+            <h2  class = "title">Artistas</h2>
+            <div class = "content_artista">
+                    <!--Acá van el chart de Artist-->
             </div>
         </div>
-        <div class="music-container">
-            <h2 class="title">Albums</h2>
-            <div class="content">
-                <div class="music">
-                    <img class="portadas" src="img//Portadas/4.png" alt="">
-                    <h3 class="artist-title">YHLQMDLG</h3>
-                    <a href="detalle.html">
-                        <p class="artist-info">Bad Bunny</p> 
-                    </a>
-                </div>
-                <div class="music">
-                    <img class="portadas" src="img//Portadas/5.png" alt="">
-                    <h3 class="artist-title">Changes</h3>
-                    <p class="artist-info">Justin Bieber</p>                </div>
-                <div class="music">
-                    <img class="portadas" src="img//Portadas/6.png" alt="">
-                    <h3 class="artist-title">Future Nostalgia</h3>
-                    <p class="artist-info">Dua Lipa</p>
-                </div>
-                <div class="music-768">
-                    <img class="portadas" src="img//Portadas/400.png" alt="">
-                    <h3 class="artist-title">AURA</h3>
-                    <p class="artist-info">Ozuna</p>  
-                </div>
-                <div class="music-1024">
-                    <img class="portadas" src="img//Portadas/500.png" alt="">
-                    <h3 class="artist-title">SERU GIRAN</h3>
-                    <p class="artist-info">Seru Giran</p>  
-                </div>
-                <div class="music-1024">
-                    <img class="portadas" src="img//Portadas/600.png" alt="">
-                    <h3 class="artist-title">The Life Of Pablo</h3>
-                    <p class="artist-info">Kanye West</p>  
-                </div>
+        <div class = "music-container">
+            <h2  class = "title">Albums</h2>
+            <div class = "content_albums">
+                    <!--Acá van el chart de Albums-->
             </div>
         </div>
         <div class="music-container mas bordertop">
             <h2 class="title">Top Tracks</h2>
             <div class="tracks">
-                <div class="music laptop ">
-                    <img class="portadas laptop autoheight" src="img//Portadas/13.png" alt="">
-                    <h3 class="artist-title">Yo Perreo Sola
-                    </h3>
-                    <a href="detalle.html">
-                        <p class="artist-info">Bad Bunny</p> 
-                    </a>
-                </div>
-                <div class="music laptop">
-                    <img class="portadas laptop autoheight" src="img//Portadas/15.png" alt="">
-                    <h3 class="artist-title">Tattoo</h3>
-                    <p class="artist-info">Rauw Alejandro</p>
-                </div>
-                <div class="music laptop">
-                    <img class="portadas laptop autoheight" src="img//Portadas/11.png" alt="">
-                    <h3 class="artist-title">Don't Start Now</h3>
-                    <p class="artist-info">Dua Lipa</p>
-                </div>
-                
+                    <!--Acá van el chart de Canciones-->
             </div>
         </div>
     </div>
-   <!--footer-->
+    <!--footer-->
     <footer>
         <article>
             <p class="deezer">Powered by: </p>

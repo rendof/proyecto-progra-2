@@ -63,7 +63,12 @@ body{
     font-family: 'Varela Round', sans-serif;
     margin-top: 20px;
 }
-.content{
+.content_artista{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 5px;
+}
+.content_albums{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 5px;
@@ -126,7 +131,9 @@ body{
     vertical-align: bottom;
     margin-top: 5px;
 }
-
+.filtro{
+    background: linear-gradient(to bottom, #ff1e56, #ffac41);
+}
 /*barra de navegación*/
 .logocontainer{
     display: none;
