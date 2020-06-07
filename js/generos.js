@@ -18,10 +18,10 @@ fetch(url)
             let gnr = ''
 
             gnr +=      '<article>'
-            gnr +=           '<a href="detallegenero.html?id='+listaGeneros[i].id+ '">'
+            gnr +=           '<a href="generosDetalle.html?id='+listaGeneros[i].id+ '">'
             gnr +=               '<img class="gnr-img" src="' + listaGeneros[i].picture_medium +'"</img>'
             gnr +=           '</a>'
-            gnr +=           '<a href="detallegenero.html?id='+listaGeneros[i].id+ '">'
+            gnr +=           '<a href="generosDetalle.html?id='+listaGeneros[i].id+ '">'
             gnr +=               '<h2 class= "gnr-title">' +listaGeneros[i].name + '</h2>'
             gnr +=           '</a>'
             gnr +=      '</article>'
