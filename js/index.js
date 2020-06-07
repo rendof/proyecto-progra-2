@@ -20,22 +20,22 @@ window.addEventListener('load', function() {
             let container = document.querySelector('.content_artista')
             let topArtist = datos.data
     
-            for(var i=0; i<6; i++){
+            for(var i=0; i<10; i++){
                 let art = ''
                 
-                art += '<div class="music-artist">'
+                art += '<div class="music">'
                 art +=      '<a href="detalleartist.html?id='+topArtist[i].id+ '">'
                 art +=          '<img class="portadas" src="' + topArtist[i].picture_medium + '">'
                 art +=      '</a>'
                 art +=      '<a href="detalleartist.html?id='+topArtist[i].id+ '">'
-                art +=          '<h3 class= "artist-title">' +topArtist[i].name + '</h3>'
+                art +=          '<h3 class= "artist-title mrg-btn ">' +topArtist[i].name + '</h3>'
                 art +=      '</a>'
                 art += '</div>'
     
                 container.innerHTML += art;
             }
         })
-    
+    //Albums
     fetch(urlalbums)
         .then(function(response){
             
@@ -46,7 +46,7 @@ window.addEventListener('load', function() {
             let container = document.querySelector('.content_albums')
             let topAlbum = datos.data
     
-            for(var i=0; i<6; i++){
+            for(var i=0; i<10; i++){
                 let art = ''
                 
                 art += '<div class="music">'
@@ -72,15 +72,18 @@ window.addEventListener('load', function() {
         })
         .then(function(datos){  
             console.log(datos.data)     
-            let container = document.querySelector('.tracks')
+            let container = document.querySelector('.content_tracks')
             let topTracks = datos.data
     
-            for(var i=0; i<3; i++){
+            for(var i=0; i<10; i++){
                 let art = ''
                 
                 art += '<div class="music laptop">'
                 art +=      '<a href="detallealbum.html?id='+ topTracks[i].id+ '">'
-                art +=          '<img class="portadas laptop autoheight filtro" src="' + topTracks[i].album.cover_medium + '">'
+                art +=          '<div class="ctr-img">' 
+                art +=              '<img class="portadas laptop autoheight filtro" src="' + topTracks[i].album.cover_medium + '">'
+                art +=              '<a class="btn-track" href="generos.html"> <i class="fas fa-play-circle play"></i></a>'
+                art +=          '</div>'
                 art +=      '</a>'
                 art +=      '<a href="detallealbum.html?id='+ topTracks[i].id+ '">'
                 art +=          '<h3 class="artist-title">' + topTracks[i].title +'</h3>'
@@ -93,5 +96,7 @@ window.addEventListener('load', function() {
                 container.innerHTML += art;
             }
         })
+    
+    
 })
 

@@ -2,12 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!-- UIkit CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.3/dist/css/uikit.min.css" />
-    <!-- UIkit JS -->
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.3/dist/js/uikit.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.3/dist/js/uikit-icons.min.js"></script>
-    <!--CSS-->
     <link rel="stylesheet" href="css/styles.css">
     <!--tipografía-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700&display=swap" rel="stylesheet">
@@ -18,6 +12,12 @@
     <!--JavaScript-->
     <script src="js/index.js"></script>
     <title>We Sound Like Music</title>
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.3/dist/css/uikit.min.css" />
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.3/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.3/dist/js/uikit-icons.min.js"></script>
+
 </head>
 <body>
     <!--header-->
@@ -47,7 +47,7 @@
                 <i id="icon" class="fas fa-headphones-alt"></i>
             </a> 
             <a href="playlist.html" >
-                <h2 class="detalle-icon">PLAYLIST</h2>    
+                <h2 class="detalle-icon">Playlist</h2>    
             </a>
         </article> 
         <article class="links">  
@@ -55,7 +55,7 @@
                 <i id="icon" class="fas fa-home"></i>
             </a>
             <a href="index.html" >
-                <h2 class="detalle-icon">HOME</h2>    
+                <h2 class="detalle-icon">Home</h2>    
             </a>
         </article>    
             <article class="links">
@@ -63,31 +63,23 @@
                 <i id="icon" class="fas fa-compact-disc"></i>
             </a>
             <a href="generos.html" >
-                <h2 class="detalle-icon">GENEROS</h2>    
+                <h2 class="detalle-icon">Géneros</h2>    
             </a>
         </article>
     </div>
     <!--CONTAINER-->
-    <!--Carousell-->
-    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="center: true">
-        <ul class="uk-slider-items uk-grid">
-            <li class="uk-width-3-4">
-                <div class="uk-panel">
-                    <img src="img/Pink and Blue Galaxy Gaming Youtube Channel Art.png" alt="">
-                    <div class="uk-position-center uk-panel"><h1></h1></div>
-                </div>
+        <!--Carrousel-->
+    <div uk-slideshow="animation: slide; ratio: 16:9">
+        <ul class="uk-slideshow-items">
+            <li>
+                <img class="banner" src="img/Pink and Blue Galaxy Gaming Youtube Channel Art.png" alt="" uk-cover>
             </li>
-            <li class="uk-width-3-4">
-                <div class="uk-panel">
-                    <img src="img/DJ programacion.jpg" alt="">
-                    <div class="uk-position-center uk-panel"><h1></h1></div>
-                </div>
+            <li>
+                <img src="img/sound.png" alt="" uk-cover>
             </li>
         </ul>
-    
-        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
-    
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
     </div>
     <div class="container">
         <!--Artistas-->
@@ -105,15 +97,16 @@
         </div>
         <div class="music-container mas bordertop">
             <h2 class="title">Top Tracks</h2>
-            <div class="tracks">
+            <div class="content_tracks">
                     <!--Acá van el chart de Canciones-->
             </div>
-        </div>
+        </div> <button></button>
     </div>
+    <!--Reproductor-->
     <!--footer-->
     <footer>
         <article>
-            <p class="deezer">Powered by: </p>
+            <p class="p-deezer">Powered by: </p>
             <img class="deezer" src="img/Mono_Full_White@2x.png" alt="">
         </article>
         <p class="creditos">Desarrollado por<br/>Martina Pawluk, Francisco José Rendo y Tomás Giampaoletti</p>
