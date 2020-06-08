@@ -2,17 +2,15 @@ window.addEventListener('load', function() {
     
     let queryString = location.search;
     let datos = new URLSearchParams(queryString);
-    
+
     let proxy = 'https://cors-anywhere.herokuapp.com/';
     let urlartists = proxy + 'https://api.deezer.com/chart/0/artists'
     let urltracks = proxy + 'https://api.deezer.com/chart/0/tracks'
     let urlalbums = proxy + 'https://api.deezer.com/chart/0/albums'
-    
-    
+  
     //Artistas
     fetch(urlartists)
         .then(function(response){
-            
             return response.json();
         })
         .then(function(datos){  
@@ -80,10 +78,7 @@ window.addEventListener('load', function() {
                 
                 art += '<div class="music laptop">'
                 art +=      '<a href="detallealbum.html?id='+ topTracks[i].id+ '">'
-                art +=          '<div class="ctr-img">' 
-                art +=              '<img class="portadas laptop autoheight filtro" src="' + topTracks[i].album.cover_medium + '">'
-                art +=              '<a class="btn-track" href="generos.html"> <i class="fas fa-play-circle play"></i></a>'
-                art +=          '</div>'
+                art +=           '<img class="portadas laptop autoheight filtro" src="' + topTracks[i].album.cover_medium + '">'
                 art +=      '</a>'
                 art +=      '<a href="detallealbum.html?id='+ topTracks[i].id+ '">'
                 art +=          '<h3 class="artist-title">' + topTracks[i].title +'</h3>'

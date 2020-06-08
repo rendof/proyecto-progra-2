@@ -10,7 +10,7 @@ let url = proxy + 'https://api.deezer.com/track/' + idTrack;
 fetch(url)
     .then(function(response){
         return response.json();
-    })
+    })  
     .then(function(datos){
         console.log(datos)
         let titulo = document.querySelector('.titulo');

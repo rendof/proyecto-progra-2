@@ -2,25 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--tipografía-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
     <!--iconos-->
     <script src="https://kit.fontawesome.com/a0c0bb4f74.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--JavaScript-->
-    <script src="js/index.js"></script>
-    <title>We Sound Like Music</title>
-    <!-- UIkit CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.3/dist/css/uikit.min.css" />
-    <!-- UIkit JS -->
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.3/dist/js/uikit.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.3/dist/js/uikit-icons.min.js"></script>
-
+    <!--CSS-->
+    <link rel="stylesheet" href="./css/resultados.css">
+    <title>Resultados</title>
 </head>
 <body class="body">
-<div class="main-container">
     <!--header-->
     <header>
         <div class="header">
@@ -71,42 +64,34 @@
             </a>
         </article>
     </div>
-    <!--CONTAINER-->
-        <!--Carrousel-->
-    <div uk-slideshow="animation: slide; ratio: 16:9">
-        <ul class="uk-slideshow-items">
-            <li>
-                <img class="banner" src="img/Pink and Blue Galaxy Gaming Youtube Channel Art.png" alt="" uk-cover>
-            </li>
-            <li>
-                <img src="img/sound.png" alt="" uk-cover>
-            </li>
-        </ul>
-        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
-        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+    <!--CONTAINER-->    
+    <h1 class="main-title">Resultados de tu busqueda</h1>
+    <div class="main-container">
+        <div class="results">
+            <h2 class="title">Artistas</h2>
+            <div class="r-artistas grid list">
+                <!--Acá van los resultados que son Artistas-->
+            </div>
+            <h3 class="ver-todos">Ver todos los Artistas</h3>
+        </div>
+
+        <div class="results">
+            <h2 class="title">Albums</h2>
+            <div class="r-albums grid list">
+                <!--Acá van los resultados que son Albums-->
+            </div>
+            <h3 class="ver-todos">Ver todos los Albums</h3>
+        </div>
+
+        <div class="results">
+            <h2 class="title">Canciones</h2>
+            <div class="r-canciones grid list">
+                <!--Acá van los resultados que son Canciones-->
+            </div>
+            <h3 class="ver-todos">Ver todos los Tracks</h3>
+        </div>
+
     </div>
-    <div class="container">
-        <!--Artistas-->
-        <div class = "music-container borderright">
-            <h2  class = "title">Artistas</h2>
-            <div class = "content_artista">
-                    <!--Acá van el chart de Artist-->
-            </div>
-        </div>
-        <div class = "music-container">
-            <h2  class = "title">Albums</h2>
-            <div class = "content_albums">
-                    <!--Acá van el chart de Albums-->
-            </div>
-        </div>
-        <div class="music-container mas bordertop">
-            <h2 class="title">Top Tracks</h2>
-            <div class="content_tracks">
-                    <!--Acá van el chart de Canciones-->
-            </div>
-        </div>
-    </div>
-    <!--Reproductor-->
     <!--footer-->
     <footer>
         <article>
@@ -115,6 +100,7 @@
         </article>
         <p class="creditos">Desarrollado por<br/>Martina Pawluk, Francisco José Rendo y Tomás Giampaoletti</p>
     </footer>
-</div>
+    
+    <script src="./js/resultados.js"></script>
 </body>
 </html>

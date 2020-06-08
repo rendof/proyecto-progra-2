@@ -214,9 +214,9 @@ text-align: right;
     }
 }
 
- /*Compu*/ 
+/*Compu*/ 
 @media (min-width:1024px){
-           /*HEADER*/
+        /*HEADER*/
         .header{
             width: 100%;
             display: flex;
@@ -256,7 +256,7 @@ text-align: right;
         }
             /*navegador*/
         .nav{
-            width: 125px;
+            width: 130px;
             height: 100%;
             left: 0;
             position: fixed;
@@ -295,28 +295,37 @@ text-align: right;
             font-size: 15px;
         }
         /*conteiner*/
-        body{
+        body.body{
             margin-left: 125px;
         }
         .container{
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
-            column-gap: 20px;
+            display: flex;
+            flex-direction: column;
         }
-        .content{
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: 1fr 1fr;
+        .content_artista{
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: repeat(5, 1fr);
         }
-        .music-container{
-            grid-template-rows: 1fr 6fr;
-            border-bottom: none;
+        .content_albums{
+            display: flex;
+            flexw
+        }
+        .content_tracks{
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: repeat(5, 1fr);
+        }
+        /*footer*/
+        footer{
+        margin-bottom: 0px;
         }
         /*CLASES*/
         .mas{
             grid-column: 1/3;
         }
         .laptop{
-            width: 300px;
+            
         }
         .autoheight{
             height: auto;
@@ -327,11 +336,7 @@ text-align: right;
         .bordertop{
             border-top: solid 1px rgba(187, 187, 187, 0.74);
         }
-        /*footer*/
-        footer{
-            
-            margin-top: 20px;
-        }
+        
 }
 
 
