@@ -6,6 +6,7 @@ body{
 }
 
 
+/*header*/
 .header{
     text-align: center;
     margin: 20px;
@@ -17,17 +18,15 @@ body{
 .img-barra{
     display: none;
 }
-
 .buscador{
     display: flex;
     border-radius: 15px;
     height: 20px;
     align-items: center;
-    
+    border: 2px solid rgba(187, 187, 187, 0.74);
 }
 #lupa{
     margin-left: 10px;
-    color:white;
 }
 .buscador-text{
     margin: 0px;
@@ -35,222 +34,129 @@ body{
     font-size: 10px;
     flex: 1;
 }
-
-.buscador{
-    width: 100%;
-    text-align: center;
-    border-radius: 15px;
-    border: solid 1px white;
-}
-
-.logo{
-    width: 320px;
-    padding: 20px;
-    box-sizing: border-box;
-    
+.signin{
+    display: none;
 }
 
 
-
-
+/*CONTAINER*/
 .divcontainer{
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    box-sizing: border-box;
-
+    grid-template-rows: 32% 27% 13% 13% 12%;
+    row-gap: 20px;
+    padding: 10px;
 }
-
+/*Artista ejemplo*/
 .badbunny{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 5px;
-    padding: 5px;
-    box-sizing: border-box;
+    grid-template-rows: 1fr 1fr;
+}
+div.BBprincipal{
+    text-align: center;
+    align-items: center;
 }
 .BPrincipal {
-    
     border-radius: 50%;
-    box-sizing: border-box;
-    width: 90%;
-    margin: auto;
+    width: 70%;
 }
-
 .DescripcionBBprincipal {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    box-sizing: border-box;
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
 .artista{
-    text-align: right;
-   font-weight: lighter;
+    text-align: center;
+    font-weight: lighter;
+    margin: 10px;
 }
-
 .tittle{
     text-align: center;
-    font-size: 100px;
-    margin: auto;
-   
+    font-size: 50px;
+    margin: 0px;
 }
-
 .descripcionartista{
     text-align: center;
-    position: relative;
-    top: 50px;
-    margin: auto;
+    margin: 10px;
 }
 .botones{
-    text-align: right;
-    position: relative;
-    top: 50px;
-    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
 }
-
-.reproducir{
+.botton{
     border: solid 1px white;
     background-color: transparent;
-    font-size: 35px;
+    font-size: 15px;
     color: white;
     border-radius: 5px;
-    
-}
-
-.seguir{
-    
-    border: solid 1px white;
-    background-color: transparent;
-    font-size: 35px;
-    color: white;
-    border-radius: 5px;
-    
-    
-}
-
-
-
-
-
+    height: 40px;
+}    
+/*Hits de artista ejemplo*/
 .hits{
-    display: grid;
-    grid-template-rows: 2fr 2fr 2fr 2fr 2fr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: solid  rgba(187, 187, 187, 0.74) 1px;
 }
-
 .tittlehits{
     text-align: center;
-    margin: auto;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
-.callaita{
+.hits-container{
+    width: 100%;
     display: grid;
-    grid-template-rows: 1fr 1fr;
-   
+    grid-template-rows: repeat(4, 1fr);
+}
+.canciones{
+    display: grid;
+    grid-template-rows: 1fr 2fr;
 }
 .a{
-    text-align: left ;
- 
-}
-
-.b{
-   text-align: left;
-}
-.c { 
     text-align: left;
-}
-
-.d{
-    text-align: left;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    margin-top: 10px;
 }
 .cancion1{
     width: 95%;
     margin: auto;
 }
 
-.lacancion{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-}
-
-.cancion2 {
-   width: 95%;
-   margin: auto;
-}
-
-.laultimavez{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-}
-
-.cancion3{
-   width: 95%;
-   margin: auto;
-}
-
-.yoperreosola{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-}
-
-.cancion4{
-    width: 95%;
-    margin: auto;
-}
-
-
-
-
-
-
+/*Albumes de artista ejemplo*/
 .albumes{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.tittlealbumes{
+.subtitle{
    text-align: center;
-   margin: 80px;
-   
-   box-sizing: border-box;
+   margin-bottom: 5px;
+   margin-top: 10px;
 }
 .dosalbumes{
     display: grid;
-    grid-template-columns: 50% 50%; 
-    box-sizing: border-box;
+    grid-template-columns: 1fr 1fr; 
 }
-.YHL{
-    background-color: coral;
+.img-albumes{
     width: 95%;
     box-sizing: border-box;
 }
-
-.OASIS{
-    background-color: coral;
-   
-   box-sizing: border-box;
-   width: 95%;
-}
-
-.siempre{
+.img-albumes720{
     display: none;
 }
 
-.nometes{
-    display: none;
-}
-
-
-
-
+/*Playlists recomendadas segun Artista Ejemplo*/
 .playlists{
-   display: grid;
-    grid-template-rows: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
 .tittleplaylists{
     text-align: center;
-    margin: 80px;
-    box-sizing: border-box;
+    margin-bottom: 5px;
 }
-
 .dosplaylists{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -260,88 +166,55 @@ body{
     background-color: white;
    
 }
-
-.playlist2{
-    width: 90%;
-    background-color: white;
-   
+.playlist1720 {
+    display: none;
 }
-
-.playlist3{
-display: none;
-}
-
-.playlist4{
-display: none;
-}
-
-.playlist5{
-display: none;
-}
-
-
-
-
-
-
-
+/*Otros artistas de interés*/
 .otrosintereses{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .tittleintereses{
     text-align: center;
-    margin: 80px;
-    box-sizing: border-box;
+    margin-bottom: 5px;
 }
 .cincoartistas{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    box-sizing: border-box;
 }
-
-
 .becky{
     box-sizing: border-box;
     width: 80%;
     border-radius: 50%;
    
 }
-.daddy{
-    box-sizing: border-box;
-    width: 80%;
-    border-radius: 50%;
-   
-}
-.lunay{
+.becky720{
     display: none;
 }
 
-.ozuna{
-    display: none;
-}
-
-.anuel{
-    display: none;
-}
 /*barra de navegación*/
+.logocontainer{
+    display: none;
+}
 .nav{
     height: 60px;
     background: linear-gradient(to bottom, #ff1e56, #ffac41);
     position: fixed;
     bottom: 0;
+    right: 0;
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
 }
 div article a{
     text-align: center;
 }
 .links{
     display: grid;
-    grid-template-rows: 3fr 1fr;
     align-items: center;
 }
+
 #icon{
     font-size: 35px;
     color: white;
@@ -352,18 +225,28 @@ div article a{
     font-size: 10px;
     text-align: center;
 }
+.nav a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    margin: 0px;
+}
 /*footer*/
 footer{
-    margin: 80px;
     border-top: solid  rgba(187, 187, 187, 0.74) 1px;
     margin-bottom: 80px;
     margin-left: 20px;
     margin-right: 20px;
     display: flex;
+    align-items: center;
 }
 footer p{
     margin: 0px;
+    margin-bottom: 5px;
     font-size: 10px;
+}
+.deezer{
+    width: 150px;
 }
 .deezer{
     color: rgba(255, 255, 255, 0.404);
@@ -374,6 +257,7 @@ footer p{
     font-size: 8px;
 }
 
+/*TABLET VERSION*/
 @media only screen and (min-width: 768px){
 
     
@@ -415,6 +299,77 @@ footer p{
 
 @media only screen and (min-width: 1024px)
 {
+    body{
+        margin-left: 125px;
+    }
+    /*HEADER*/
+    .header{
+        width: 100%;
+        display: flex;
+    }
+    .signin{
+        display: block;
+        text-align: right;
+        flex: 1;
+        margin-right: 40px;
+    }
+    .signinp{
+        font-weight: 400;
+        margin: 0px;
+    }
+    .img-barra{
+        display: grid;
+
+    }
+    .logo{
+        display: none;
+    }
+    .buscador{
+        width: 400px;
+        height: 29px;
+    }
+        /*navegador*/
+    .nav{
+        width: 125px;
+        height: 100%;
+        left: 0;
+        position: fixed;
+        display: grid;
+        grid-template-rows: 120px repeat(3, 30px);
+        grid-template-columns: 1fr;
+        text-align: center;
+        align-items: baseline;
+    }
+    .logocontainer{
+        display: block;
+        height: 100%;
+        align-items: center;
+    }
+    .logonav{
+        margin-top: 30px;
+        width: 75px
+    }
+    .links{
+        display: grid;
+        grid-template-columns: 30px 90px;
+        grid-template-rows: 1fr;
+        column-gap: 5px;
+        align-items: center;
+        width: 100%;
+        height: 30px;
+    }
+    .links:hover{
+        background-color:rgba(67, 67, 68, 0.185);        
+    }
+
+    .detalle-icon{
+        font-size: 15px;
+        text-align: left;
+    }
+    #icon{
+        font-size: 15px;
+    }
+
     .dosalbumes{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -470,5 +425,9 @@ footer p{
 }
 .lunay{
     width: 90%;
+}
+footer{
+    margin-bottom: 10px;
+    margin-top: 20px;
 }
 }
