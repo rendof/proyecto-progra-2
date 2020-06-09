@@ -106,7 +106,7 @@ div article a{
 .list{
     list-style: none;
 }
-.grid{
+.flex{
     display: flex;
     flex-direction: row;
 }
@@ -119,6 +119,8 @@ div article a{
 }
 .results{
     border-bottom: solid  rgba(187, 187, 187, 0.74) 1px;
+    display: flex;
+    flex-direction: column;
 }
 .artist-title{
     font-weight: 600;
@@ -151,7 +153,24 @@ a{
     font-size: 1rem;
     text-decoration: none;
 }
-
+.artist-div{
+    display: none;
+}
+.a-menos-artist{
+    display: none;
+}
+.album-div{
+    display: none;
+}
+.a-menos-album{
+    display: none;
+}
+.track-div{
+    display: none;
+}
+.a-menos-track{
+    display: none;
+}
 
 
 /*footer*/
