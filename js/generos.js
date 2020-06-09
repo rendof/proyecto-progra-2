@@ -29,5 +29,5 @@ fetch(url)
             container.innerHTML += gnr;
             }
             
-    })
+    }) 
     

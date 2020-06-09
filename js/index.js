@@ -32,6 +32,10 @@ window.addEventListener('load', function() {
     
                 container.innerHTML += art;
             }
+
+          
+                
+            
         })
     //Albums
     fetch(urlalbums)
