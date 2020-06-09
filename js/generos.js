@@ -15,15 +15,19 @@ fetch(url)
         let listaGeneros = datos.data
 
         for(var i=1; i<listaGeneros.length; i++){
-        
-                let gnr = ''
+            let gnr = ''
 
-                gnr += '<article>'
-                gnr +=      '<img class="gnr-img" src="' + listaGeneros[i].picture_medium +'"</img>'
-                gnr +=      '<h2 class= "gnr-title">' +listaGeneros[i].name + '</h2>'
-                gnr += '</article>'
+            gnr +=      '<article>'
+            gnr +=           '<a href="generosDetalle.html?id='+listaGeneros[i].id+ '">'
+            gnr +=               '<img class="gnr-img" src="' + listaGeneros[i].picture_medium +'"</img>'
+            gnr +=           '</a>'
+            gnr +=           '<a href="generosDetalle.html?id='+listaGeneros[i].id+ '">'
+            gnr +=               '<h2 class= "gnr-title">' +listaGeneros[i].name + '</h2>'
+            gnr +=           '</a>'
+            gnr +=      '</article>'
     
-                container.innerHTML += gnr;
+            container.innerHTML += gnr;
             }
             
-    })
+    }) 
+    

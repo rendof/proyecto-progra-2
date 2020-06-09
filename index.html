@@ -9,9 +9,18 @@
     <!--iconos-->
     <script src="https://kit.fontawesome.com/a0c0bb4f74.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>We Sound like music</title>
+    <!--JavaScript-->
+    <script src="js/index.js"></script>
+    <title>We Sound Like Music</title>
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.3/dist/css/uikit.min.css" />
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.3/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.3/dist/js/uikit-icons.min.js"></script>
+
 </head>
-<body>
+<body class="body">
+<div class="main-container">
     <!--header-->
     <header>
         <div class="header">
@@ -21,7 +30,10 @@
             </div>
             <div class="buscador">
                 <i id="lupa" class="fas fa-search"></i>
-                <h2 class="buscador-text">*acá va el buscador ponele*</h2> 
+                <form action="resultados.html" method="GET">
+                    <input type="text" name="search" placeholder="¿Qué queres buscar?" id="">
+                    <button type="submit">Buscar</button>
+                </form>
             </div>
             <div class="signin">
                 <button class="signinp1">REGISTRARSE</button>
@@ -36,10 +48,10 @@
         </article>
         <article class="links">
             <a href="playlist.html">
-              <i id="icon" class="fas fa-headphones-alt"></i>
+                <i id="icon" class="fas fa-headphones-alt"></i>
             </a> 
             <a href="playlist.html" >
-                <h2 class="detalle-icon">PLAYLIST</h2>    
+                <h2 class="detalle-icon">Playlist</h2>    
             </a>
         </article> 
         <article class="links">  
@@ -47,122 +59,62 @@
                 <i id="icon" class="fas fa-home"></i>
             </a>
             <a href="index.html" >
-                <h2 class="detalle-icon">HOME</h2>    
+                <h2 class="detalle-icon">Home</h2>    
             </a>
         </article>    
             <article class="links">
             <a href="generos.html">
                 <i id="icon" class="fas fa-compact-disc"></i>
             </a>
-            <a href="index.html.html" >
-                <h2 class="detalle-icon">GENEROS</h2>    
+            <a href="generos.html" >
+                <h2 class="detalle-icon">Géneros</h2>    
             </a>
         </article>
     </div>
-    <!--container-->
-    <img class="banner" src="img/Pink and Blue Galaxy Gaming Youtube Channel Art.png" alt="">
+    <!--CONTAINER-->
+        <!--Carrousel-->
+    <div uk-slideshow="animation: slide; ratio: 16:9">
+        <ul class="uk-slideshow-items">
+            <li>
+                <img class="banner" src="img/Pink and Blue Galaxy Gaming Youtube Channel Art.png" alt="" uk-cover>
+            </li>
+            <li>
+                <img src="img/sound.png" alt="" uk-cover>
+            </li>
+        </ul>
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+    </div>
     <div class="container">
-        <div class="music-container borderright">
-            <h2 class="title">Artistas</h2>
-            <div class="content">
-                <div class="music-artist">
-                    <a href="detalle.html">
-                        <img class="portadas" src="img//Portadas/10.png" alt="">
-                    </a>
-                    <a href="detalle.html">
-                        <h3 class="artist-title">Bad Bunny</h3>
-                    </a> 
-                </div>
-                <div class="music-artist">
-                    <img class="portadas" src="img//Portadas/20.png" alt="">
-                    <h3 class="artist-title">J Balvin</h3>
-                </div>
-                <div class="music-artist">
-                    <img class="portadas" src="img//Portadas/30.png" alt="">
-                    <h3 class="artist-title">Maroon 5</h3>
-                </div>
-                <div class="music-artist768">
-                    <img class="portadas" src="img//Portadas/100.png" alt="">
-                    <h3 class="artist-title">Seru Giran</h3>
-                </div>
-                <div class="music-artist1024">
-                    <img class="portadas" src="img//Portadas/200.png" alt="">
-                    <h3 class="artist-title">Ozuna</h3>
-                </div>
-                <div class="music-artist1024">
-                    <img class="portadas" src="img//Portadas/300.png" alt="">
-                    <h3 class="artist-title">Kanye West</h3>
-                </div>
+        <!--Artistas-->
+        <div class = "music-container borderright">
+            <h2  class = "title">Artistas</h2>
+            <div class = "content_artista">
+                    <!--Acá van el chart de Artist-->
             </div>
         </div>
-        <div class="music-container">
-            <h2 class="title">Albums</h2>
-            <div class="content">
-                <div class="music">
-                    <img class="portadas" src="img//Portadas/4.png" alt="">
-                    <h3 class="artist-title">YHLQMDLG</h3>
-                    <a href="detalle.html">
-                        <p class="artist-info">Bad Bunny</p> 
-                    </a>
-                </div>
-                <div class="music">
-                    <img class="portadas" src="img//Portadas/5.png" alt="">
-                    <h3 class="artist-title">Changes</h3>
-                    <p class="artist-info">Justin Bieber</p>                </div>
-                <div class="music">
-                    <img class="portadas" src="img//Portadas/6.png" alt="">
-                    <h3 class="artist-title">Future Nostalgia</h3>
-                    <p class="artist-info">Dua Lipa</p>
-                </div>
-                <div class="music-768">
-                    <img class="portadas" src="img//Portadas/400.png" alt="">
-                    <h3 class="artist-title">AURA</h3>
-                    <p class="artist-info">Ozuna</p>  
-                </div>
-                <div class="music-1024">
-                    <img class="portadas" src="img//Portadas/500.png" alt="">
-                    <h3 class="artist-title">SERU GIRAN</h3>
-                    <p class="artist-info">Seru Giran</p>  
-                </div>
-                <div class="music-1024">
-                    <img class="portadas" src="img//Portadas/600.png" alt="">
-                    <h3 class="artist-title">The Life Of Pablo</h3>
-                    <p class="artist-info">Kanye West</p>  
-                </div>
+        <div class = "music-container">
+            <h2  class = "title">Albums</h2>
+            <div class = "content_albums">
+                    <!--Acá van el chart de Albums-->
             </div>
         </div>
         <div class="music-container mas bordertop">
             <h2 class="title">Top Tracks</h2>
-            <div class="tracks">
-                <div class="music laptop ">
-                    <img class="portadas laptop autoheight" src="img//Portadas/13.png" alt="">
-                    <h3 class="artist-title">Yo Perreo Sola
-                    </h3>
-                    <a href="detalle.html">
-                        <p class="artist-info">Bad Bunny</p> 
-                    </a>
-                </div>
-                <div class="music laptop">
-                    <img class="portadas laptop autoheight" src="img//Portadas/15.png" alt="">
-                    <h3 class="artist-title">Tattoo</h3>
-                    <p class="artist-info">Rauw Alejandro</p>
-                </div>
-                <div class="music laptop">
-                    <img class="portadas laptop autoheight" src="img//Portadas/11.png" alt="">
-                    <h3 class="artist-title">Don't Start Now</h3>
-                    <p class="artist-info">Dua Lipa</p>
-                </div>
-                
+            <div class="content_tracks">
+                    <!--Acá van el chart de Canciones-->
             </div>
         </div>
     </div>
-   <!--footer-->
+    <!--Reproductor-->
+    <!--footer-->
     <footer>
         <article>
-            <p class="deezer">Powered by: </p>
+            <p class="p-deezer">Powered by: </p>
             <img class="deezer" src="img/Mono_Full_White@2x.png" alt="">
         </article>
         <p class="creditos">Desarrollado por<br/>Martina Pawluk, Francisco José Rendo y Tomás Giampaoletti</p>
     </footer>
+</div>
 </body>
 </html>

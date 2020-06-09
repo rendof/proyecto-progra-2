@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--CSS-->
-    <link rel="stylesheet" href="css/generos.css">
     <!--tipografía-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
     <!--iconos-->
     <script src="https://kit.fontawesome.com/a0c0bb4f74.js" crossorigin="anonymous"></script>
-    <title>Géneros</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS-->
+    <link rel="stylesheet" href="./css/resultados.css">
+    <title>Resultados</title>
 </head>
-<body>
-    <!--Header-->
+<body class="body">
+    <!--header-->
     <header>
         <div class="header">
             <div class="superior">
@@ -22,7 +23,10 @@
             </div>
             <div class="buscador">
                 <i id="lupa" class="fas fa-search"></i>
-                <h2 class="buscador-text">*acá va el buscador ponele*</h2> 
+                <form action="resultados.html" method="GET">
+                    <input type="text" name="search" placeholder="¿Qué queres buscar?" id="">
+                    <button type="submit">Buscar</button>
+                </form>
             </div>
             <div class="signin">
                 <button class="signinp1">REGISTRARSE</button>
@@ -30,7 +34,7 @@
             </div>
         </div>
     </header>
-    <!--barra de navegación-->
+ <!--barra de navegación-->
     <div class="nav">
         <article class="logocontainer">
             <img class="logonav" src="img/We sound blanco.png" alt="">
@@ -40,7 +44,7 @@
                 <i id="icon" class="fas fa-headphones-alt"></i>
             </a> 
             <a href="playlist.html" >
-                <h2 class="detalle-icon">PLAYLIST</h2>    
+                <h2 class="detalle-icon">Playlist</h2>    
             </a>
         </article> 
         <article class="links">  
@@ -48,35 +52,55 @@
                 <i id="icon" class="fas fa-home"></i>
             </a>
             <a href="index.html" >
-                <h2 class="detalle-icon">HOME</h2>    
+                <h2 class="detalle-icon">Home</h2>    
             </a>
         </article>    
             <article class="links">
             <a href="generos.html">
                 <i id="icon" class="fas fa-compact-disc"></i>
             </a>
-            <a href="index.html.html" >
-                <h2 class="detalle-icon">GENEROS</h2>    
+            <a href="generos.html" >
+                <h2 class="detalle-icon">Géneros</h2>    
             </a>
         </article>
     </div>
-    <!--CONTAINER-->
-    <div class="container">
-        <h1>Géneros</h1>
-        <div class="gnr-container">
-            <article class="genero">
-                
-            </article>
+    <!--CONTAINER-->    
+    <h1 class="main-title">Resultados de tu busqueda</h1>
+    <div class="main-container">
+        <div class="results">
+            <h2 class="title">Artistas</h2>
+            <div class="r-artistas grid list">
+                <!--Acá van los resultados que son Artistas-->
+            </div>
+            <h3 class="ver-todos">Ver todos los Artistas</h3>
         </div>
+
+        <div class="results">
+            <h2 class="title">Albums</h2>
+            <div class="r-albums grid list">
+                <!--Acá van los resultados que son Albums-->
+            </div>
+            <h3 class="ver-todos">Ver todos los Albums</h3>
+        </div>
+
+        <div class="results">
+            <h2 class="title">Canciones</h2>
+            <div class="r-canciones grid list">
+                <!--Acá van los resultados que son Canciones-->
+            </div>
+            <h3 class="ver-todos">Ver todos los Tracks</h3>
+        </div>
+
     </div>
     <!--footer-->
     <footer>
         <article>
-            <p class="deezer">Powered by: </p>
+            <p class="p-deezer">Powered by: </p>
             <img class="deezer" src="img/Mono_Full_White@2x.png" alt="">
         </article>
         <p class="creditos">Desarrollado por<br/>Martina Pawluk, Francisco José Rendo y Tomás Giampaoletti</p>
     </footer>
-    <script src="./js/generos.js"></script>
+    
+    <script src="./js/resultados.js"></script>
 </body>
 </html>
