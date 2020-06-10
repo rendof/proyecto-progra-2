@@ -1,6 +1,8 @@
 let queryString = location.search;
 let datos = new URLSearchParams(queryString);
 
+
+
 let proxy = 'https://cors-anywhere.herokuapp.com/';
 let url = proxy + 'https://api.deezer.com/genre'
 

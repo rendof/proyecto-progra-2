@@ -7,6 +7,9 @@ let idgenre = datos.get('id');
 let proxy = 'https://cors-anywhere.herokuapp.com/';
 let url = proxy + 'https://api.deezer.com/genre/' + idgenre;
 
+//let url = proxy + 'https://api.deezer.com/tracks/genre/' + idgenre;
+
+
 fetch(url)
     .then(function(response){
         return response.json();
