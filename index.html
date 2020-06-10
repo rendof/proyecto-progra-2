@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!--CSS-->
     <link rel="stylesheet" href="css/styles.css">
     <!--tipografía-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700&display=swap" rel="stylesheet">
@@ -30,9 +31,9 @@
             </div>
             <div class="buscador">
                 <i id="lupa" class="fas fa-search"></i>
-                <form action="resultados.html" method="GET">
-                    <input type="text" name="search" placeholder="¿Qué queres buscar?" id="">
-                    <button type="submit">Buscar</button>
+                <form action="resultados.html" method="GET" class="buscador-form">
+                    <input type="text" name="search" placeholder="¿Qué queres buscar?" id="" class="buscador-input">
+                    <button type="submit" class="buscador-button">Buscar</button>
                 </form>
             </div>
             <div class="signin">
@@ -87,7 +88,7 @@
     </div>
     <div class="container">
         <!--Artistas-->
-        <div class = "music-container borderright">
+        <div class = "music-container">
             <h2  class = "title">Artistas</h2>
             <div class = "content_artista">
                     <!--Acá van el chart de Artist-->

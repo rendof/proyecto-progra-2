@@ -53,7 +53,9 @@ window.addEventListener('load', function() {
                 
                 art += '<div class="music">'
                 art +=      '<a href="detallealbum.html?id='+ topAlbum[i].id+ '">'
-                art +=          '<img class="portadas" src="' + topAlbum[i].cover_medium + '">'
+                art +=      '<div class="div-img">'
+                art +=          '<img class="portadas cuadrado" src="' + topAlbum[i].cover_medium + '">'
+                art +=      '</div>'
                 art +=      '</a>'
                 art +=      '<a href="detallealbum.html?id='+ topAlbum[i].id+ '">'
                 art +=          '<h3 class="artist-title">' + topAlbum[i].title +'</h3>'
@@ -81,15 +83,20 @@ window.addEventListener('load', function() {
                 let art = ''
                 
                 art += '<div class="music laptop">'
+                art +=      '<p class="puesto">' +[i+1]+ '° </p>'
                 art +=      '<a href="detallealbum.html?id='+ topTracks[i].id+ '">'
+                art +=      '<div class="div-img">'
                 art +=           '<img class="portadas laptop autoheight filtro" src="' + topTracks[i].album.cover_medium + '">'
+                art +=      '</div>'
                 art +=      '</a>'
+                art +=      '<div>'
                 art +=      '<a href="detallealbum.html?id='+ topTracks[i].id+ '">'
                 art +=          '<h3 class="artist-title">' + topTracks[i].title +'</h3>'
                 art +=      '</a>'
                 art +=      '<a href="detallealbum.html?id='+ topTracks[i].id+ '">'
                 art +=          '<p class= "artist-info">' + topTracks[i].artist.name + '</p>'
                 art +=      '</a>'
+                art +=      '</div>'
                 art += '</div>'
     
                 container.innerHTML += art;

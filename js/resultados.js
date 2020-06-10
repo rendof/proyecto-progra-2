@@ -104,9 +104,10 @@ fetch(urlAlbum)
             art += '<div class="content">'
             art +=      '<a href="detallealbum.html?id=?' + albumSrch[i].id + '">'
             art +=          '<img class="portadas" src="' +albumSrch[i].cover_small + '">'
+            art +=      '<h2 class="artist-title">' + albumSrch[i].title + '</h2>'
             art +=      '</a>'
             art +=      '<a href="detalleartist.html?id=?' + albumSrch[i].artist.id + '">'
-            art +=          '<h3 class="artist-title">' +albumSrch[i].artist.name+ '</h3>'
+            art +=          '<p class="artist-info">' +albumSrch[i].artist.name+ '</p>'
             art +=      '</a>'  
             art +=  '<div/>'
 
@@ -127,14 +128,15 @@ fetch(urlAlbum)
             
             let arti = ''
             
-            arti+= '<div class="content">'
-            arti+=      '<a href="detallealbum.html?id=?' + AlbumMas[i].id + '">'
-            arti+=          '<img class="portadas" src="' +AlbumMas[i].cover_small + '">'
-            arti+=      '</a>'
-            arti+=      '<a href="detalleartist.html?id=?' + AlbumMas[i].artist.id + '">'
-            arti+=          '<h3 class="artist-title">' +AlbumMas[i].artist.name+ '</h3>'
-            arti+=      '</a>'  
-            arti+=  '<div/>'
+            arti += '<div class="content">'
+            arti +=      '<a href="detallealbum.html?id=?' + AlbumMas[i].id + '">'
+            arti +=          '<img class="portadas" src="' +AlbumMas[i].cover_small + '">'
+            arti +=      '<h2 class="artist-title">' + AlbumMas[i].title + '</h2>'
+            arti +=      '</a>'
+            arti +=      '<a href="detalleartist.html?id=?' + AlbumMas[i].artist.id + '">'
+            arti +=          '<p class="artist-info">' +AlbumMas[i].artist.name+ '</p>'
+            arti +=      '</a>'  
+            arti +=  '<div/>'
 
             masAlbum.innerHTML += arti
         }

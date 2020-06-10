@@ -25,28 +25,47 @@ body{
 }
 .buscador{
     display: flex;
-    background-color: rgba(187, 187, 187, 0.74);
+    background-color: rgba(187, 187, 187, 0.158);
     border-radius: 15px;
-    height: 20px;
     align-items: center;
+    text-align: center;
 }
 #lupa{
     margin-left: 10px;
+    margin-right: 10px;
 }
 .buscador-text{
     margin: 0px;
     font-weight: lighter;
     font-size: 10px;
-    flex: 1;
 }
 .signin{
     display: none;
+}
+.buscador-form{ 
+    width: 100%;
+    text-align: left;
+}
+.buscador-input{
+    background: none;
+    width: 75%;
+    border: none;
+    color: white;
+}
+.buscador-button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+
+
 }
 /*container*/
 .container{
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 25px;
     row-gap: 20px;
 }
 
@@ -90,6 +109,7 @@ body{
     padding: 10px;
     background-color:  #2b29299d;
     text-align: center;
+    border-bottom: 1px rgba(70, 69, 69, 0.315) solid;
 }
 .music a{
     text-decoration: none;
@@ -124,6 +144,14 @@ body{
 }
 .mrg-btn{
     margin-bottom: 10px;
+}
+.puesto{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    margin-right: 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 /*barra de navegación*/
 .logocontainer{
@@ -296,7 +324,7 @@ text-align: right;
         }
         /*conteiner*/
         body.body{
-            margin-left: 125px;
+            margin-left: 130px;
         }
         .container{
             display: flex;
@@ -308,13 +336,20 @@ text-align: right;
             grid-template-columns: repeat(5, 1fr);
         }
         .content_albums{
-            display: flex;
-            flexw
+            text-align: left;
+            
         }
         .content_tracks{
-            display: grid;
-            grid-template-rows: 1fr;
-            grid-template-columns: repeat(5, 1fr);
+            display: flex;
+            flex-direction: column;
+        }
+        .div-img{
+            text-align: left;
+            height: 100%;
+        }
+        .cuadrado{
+            height: 100px;
+            width: 100px;
         }
         /*footer*/
         footer{
@@ -325,17 +360,16 @@ text-align: right;
             grid-column: 1/3;
         }
         .laptop{
-            
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 5px;
         }
         .autoheight{
-            height: auto;
+            height: 70px;
+            width: auto;
+            margin-right: 10px;
         }
-        .borderright{
-            border-right: solid 1px rgba(187, 187, 187, 0.74);
-        }
-        .bordertop{
-            border-top: solid 1px rgba(187, 187, 187, 0.74);
-        }
+        
         
 }
 
