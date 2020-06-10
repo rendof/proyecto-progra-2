@@ -60,7 +60,7 @@ function cancionAplaylist(name){
             }
 
         
-       
+       //falta que el button los guarde los temas en el local storage
     })
 
 
