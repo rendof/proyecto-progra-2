@@ -17,7 +17,7 @@ body.body{
     padding: 20px;
 }
 .logo{
-    width: 320px;
+    width: 80%;
     margin-bottom: 15px;
 }
 .img-barra{
@@ -25,22 +25,44 @@ body.body{
 }
 .buscador{
     display: flex;
-    background-color: rgba(187, 187, 187, 0.74);
+    background-color: rgba(187, 187, 187, 0.158);
     border-radius: 15px;
-    height: 20px;
     align-items: center;
+    text-align: center;
+    height: 25px;
 }
 #lupa{
     margin-left: 10px;
+    margin-right: 10px;
 }
 .buscador-text{
     margin: 0px;
     font-weight: lighter;
     font-size: 10px;
-    flex: 1;
 }
 .signin{
     display: none;
+}
+.buscador-form{ 
+    width: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+
+}
+.buscador-input{
+    background: none;
+    flex: 1;
+    border: none;
+    color: white;
+}
+.buscador-button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    margin-right: 10px;
 }
 /*barra de navegación*/
 .logocontainer{
@@ -117,6 +139,13 @@ footer article{
 }
 .ctr-img{
 text-align: right;
+}
+
+/* Tablet */
+@media (min-width: 768px){
+    .logo{
+        width: 50%;
+    }
 }
 /*Compu*/ 
 @media (min-width:1024px){
@@ -205,3 +234,4 @@ text-align: right;
     /*footer*/
     footer{
         margin-bottom: 0px;
+    }
