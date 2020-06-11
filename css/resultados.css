@@ -8,8 +8,8 @@
 .main-title{
     font-size: 1.5rem;
     font-family: 'Varela Round', sans-serif;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 0px;
+    padding:20px;
     color: white;
 }
 .title{
@@ -30,7 +30,7 @@
 }
 .content{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     padding: 5px;
     background-color:  #2b29299d;
     text-align: left;
@@ -46,7 +46,7 @@
     font-weight: 600;
     text-align: left;
     line-height: 18px;
-    margin-top: 5px;
+    margin-top: 0px;
     margin-bottom: 0px;
     color: white;
     font-size: 1rem;
@@ -94,16 +94,22 @@ a{
 .a-menos-track{
     display: none;
 }
-
-
+.res-alb-div{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    justify-content: center;
+}
+.radius{
+    border-radius: 100%;
+}
+.margin-left{
+    margin-left: 10px;
+}
 
 /* Tablet */
 @media (min-width: 768px){
-    .main-container{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: ;
-    }
+    
     .grid{
         display: grid;
         grid-template-rows: repeat(5, 1fr);
