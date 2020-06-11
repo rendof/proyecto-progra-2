@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--CSS-->
     <link rel="stylesheet" href="css/generos.css">
+    <link rel="stylesheet" href="css/partials.css">
     <!--tipografía-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
@@ -12,8 +13,8 @@
     <script src="https://kit.fontawesome.com/a0c0bb4f74.js" crossorigin="anonymous"></script>
     <title>Géneros</title>
 </head>
-<body>
-    <!--Header-->
+<body class="body">
+    <!--header-->
     <header>
         <div class="header">
             <div class="superior">
@@ -22,7 +23,10 @@
             </div>
             <div class="buscador">
                 <i id="lupa" class="fas fa-search"></i>
-                <h2 class="buscador-text">*acá va el buscador ponele*</h2> 
+                <form action="resultados.html" method="GET" class="buscador-form">
+                    <input type="text" name="search" placeholder="¿Qué queres buscar?" id="" class="buscador-input">
+                    <button type="submit" class="buscador-button">Buscar</button>
+                </form>
             </div>
             <div class="signin">
                 <button class="signinp1">REGISTRARSE</button>
@@ -40,7 +44,7 @@
                 <i id="icon" class="fas fa-headphones-alt"></i>
             </a> 
             <a href="playlist.html" >
-                <h2 class="detalle-icon">PLAYLIST</h2>    
+                <h2 class="detalle-icon">Playlist</h2>    
             </a>
         </article> 
         <article class="links">  
@@ -48,31 +52,31 @@
                 <i id="icon" class="fas fa-home"></i>
             </a>
             <a href="index.html" >
-                <h2 class="detalle-icon">HOME</h2>    
+                <h2 class="detalle-icon">Home</h2>    
             </a>
         </article>    
             <article class="links">
             <a href="generos.html">
                 <i id="icon" class="fas fa-compact-disc"></i>
             </a>
-            <a href="index.html.html" >
-                <h2 class="detalle-icon">GENEROS</h2>    
+            <a href="generos.html" >
+                <h2 class="detalle-icon">Géneros</h2>    
             </a>
         </article>
     </div>
+
     <!--CONTAINER-->
-    <div class="container">
+    <div class="container" style="background-image: url();">
         <h1>Generos</h1>
         <div class="gnr-container">
-            <article class="genero">
-                
-            </article>
+            
         </div>
     </div>
+ 
     <!--footer-->
     <footer>
         <article>
-            <p class="deezer">Powered by: </p>
+            <p class="p-deezer">Powered by: </p>
             <img class="deezer" src="img/Mono_Full_White@2x.png" alt="">
         </article>
         <p class="creditos">Desarrollado por<br/>Martina Pawluk, Francisco José Rendo y Tomás Giampaoletti</p>

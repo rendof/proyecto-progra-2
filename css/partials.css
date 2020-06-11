@@ -1,8 +1,6 @@
-/*TIPOGRAFIAS
-font-family: 'Montserrat', sans-serif;
-font-family: 'Varela Round', sans-serif;
-*/
-/*mobile version*/
+
+/** mobile version **/
+
 body.body{
     background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.897), rgb(47, 47, 47));
     font-family: 'Montserrat', sans-serif;
@@ -12,6 +10,7 @@ body.body{
     height: 100%;
 }
 /*header*/
+
 .header{
     text-align: center;
     padding: 20px;
@@ -29,7 +28,6 @@ body.body{
     border-radius: 15px;
     align-items: center;
     text-align: center;
-    height: 25px;
 }
 #lupa{
     margin-left: 10px;
@@ -46,13 +44,10 @@ body.body{
 .buscador-form{ 
     width: 100%;
     text-align: left;
-    display: flex;
-    flex-direction: row;
-
 }
 .buscador-input{
     background: none;
-    flex: 1;
+    width: 70%;
     border: none;
     color: white;
 }
@@ -62,8 +57,8 @@ body.body{
     cursor: pointer;
     color: white;
     font-family: 'Varela Round', sans-serif;
-    margin-right: 10px;
 }
+
 /*barra de navegación*/
 .logocontainer{
     display: none;
@@ -229,9 +224,10 @@ text-align: right;
     }
     /*conteiner*/
     body.body{
-        margin-left: 125px;
+        margin-left: 130px;
     }
     /*footer*/
     footer{
         margin-bottom: 0px;
     }
+}

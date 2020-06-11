@@ -59,16 +59,20 @@ fetch(urlArtist)
 
         for(var i=6; i<ArtistMas.length; i++){
             
-            let arti = ''
+            let art = ''
             
-            arti += '<div class="content">'
-            arti +=      '<a href="detalleartist.html?id=?' + ArtistMas[i].id + '">'
-            arti +=          '<img class="portadas" src="' + ArtistMas[i].picture_small  + '">'
-            arti +=          '<h3 class="artist-title">' + ArtistMas[i].name + '</h3>'
-            arti +=      '</a>'  
-            arti +=  '<div/>'
+            art += '<div class="content">'
+            art +=      '<a href="detalleartist.html?id=?' + ArtistMas[i].id + '">'
+            art +=          '<img class="portadas radius" src="' + ArtistMas[i].picture_small  + '">'
+            art +=      '</a>'  
+            art +=      '<div class="res-alb-div">'
+            art +=      '<a href="detalleartist.html?id=?' + ArtistMas[i].id + '">'
+            art +=          '<h3 class="artist-title margin-left">' + ArtistMas[i].name + '</h3>'
+            art +=      '</a>'  
+            art +=      '</div>'
+            art +=  '<div/>'
 
-            masArtist.innerHTML += arti
+            masArtist.innerHTML += art
         }
 
     })
@@ -216,19 +220,23 @@ fetch(urlTrack)
 
         for(var i=6; i<TrackMas.length; i++){
             
-            let trk = ''
+            let art = ''
             
-            trk += '<div class="content">'
-            trk +=      '<a href="detalletrack.html?id=?' + TrackMas[i].id + '">'
-            trk +=          '<img class="portadas" src="' +TrackMas[i].album.cover_small + '">'
-            trk +=          '<h2 class="artist-title">' +TrackMas[i].title+ '</h2>'
-            trk +=      '</a>'  
-            trk +=      '<a href="detalleartist.html?id=?' + TrackMas[i].artist.id + '">'
-            trk +=          '<p class="artist-info">' +TrackMas[i].artist.name+ '</p>'
-            trk +=      '</a>' 
-            trk +=  '<div/>'
+            art += '<div class="content">'
+            art +=      '<a href="detalletrack.html?id=?' + TrackMas[i].id + '">'
+            art +=          '<img class="portadas" src="' +TrackMas[i].album.cover_small + '">'
+            art +=      '</a>'
+            art +=      '<div class="res-alb-div">'
+            art +=          '<a href="detalletrack.html?id=?' + TrackMas[i].id + '">'
+            art +=              '<h2 class="artist-title">' +TrackMas[i].title+ '</h2>'
+            art +=          '</a>'  
+            art +=          '<a href="detalleartist.html?id=?' + TrackMas[i].artist.id + '">'
+            art +=              '<p class="artist-info">' +TrackMas[i].artist.name+ '</p>'
+            art +=          '</a>'
+            art +=      '</div>'
+            art +=  '<div/>'
 
-            masTrack.innerHTML += trk
+            masTrack.innerHTML += art
         }
 
     })

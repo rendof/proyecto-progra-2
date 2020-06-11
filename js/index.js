@@ -87,7 +87,7 @@ window.addEventListener('load', function() {
             for(var i=0; i<10; i++){
                 let art = ''
                 
-                art += '<div class="music laptop">'
+                art += '<div class="music laptop mrg-btn">'
                 art +=      '<p class="puesto">' +[i+1]+ '° </p>'
                 art +=      '<a href="detallealbum.html?id='+ topTracks[i].id+ '">'
                 art +=      '<div class="div-img">'

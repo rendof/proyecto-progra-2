@@ -286,6 +286,7 @@ text-align: right;
             color: white;
             border-radius: 10px;
             height: 30px;
+            
         }
         .signinp2{
             border:none;
@@ -388,12 +389,15 @@ text-align: right;
         .laptop{
             display: flex;
             flex-direction: row;
-            margin-bottom: 5px;
+            
         }
         .autoheight{
             height: 70px;
             width: auto;
             margin-right: 10px;
+        }
+        .mrg-btn{
+            margin-bottom: 10px;
         }
     }
         
