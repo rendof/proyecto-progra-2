@@ -2,6 +2,7 @@
 let queryString = location.search;
 let datos = new URLSearchParams(queryString);
 let idgenre = datos.get('id');
+ let datosradio = new URLSearchParams(queryString);
 //estos tres pasos nos permite obtener el id de la url
 
 let proxy = 'https://cors-anywhere.herokuapp.com/';
@@ -27,7 +28,7 @@ fetch(url)
     })
 
 
-    let urlartists= proxy + 'https://api.deezer.com/genre/' + idgenre + 'artists'
+    let urlartists= proxy + 'https://api.deezer.com/genre/' + idgenre + '/artists'
 
 fetch(urlartists)
 .then(function(response){
@@ -36,7 +37,39 @@ fetch(urlartists)
 
 .then(function(datos){
     console.log(datos)
+//console.log(datos.data)     
+let container = document.querySelector('.content_artista')
+let topArtist = datos.data
+
+for(var i=0; i<10; i++){
+    let art = ''
+    
+    art += '<div class="music">'
+    art +=      '<a href="detalleartist.html?id='+topArtist[i].id+ '">'
+    art +=          '<img class="portadas" src="' + topArtist[i].picture_medium + '">'
+    art +=      '</a>'
+    art +=      '<a href="detalleartist.html?id='+topArtist[i].id+ '">'
+    art +=          '<h3 class= "artist-title mrg-btn ">' +topArtist[i].name + '</h3>'
+    art +=      '</a>'
+    art += '</div>'
+
+    container.innerHTML += art;
+}})
+
+
+let urlradios= proxy + 'https://api.deezer.com/genre/' + idgenre + '/radios'
+
+fetch(urlradios)
+.then(function(response){
+    return response.json();
+})
+
+.then(function(datosradio){
+    console.log(datosradio)
 let ul = document.querySelector (".canciones")
 ul += '<a href=""> <li>'+ datos.name+'</li></a>'
 })
+
+
+
 

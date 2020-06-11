@@ -9,6 +9,8 @@ let url = proxy + 'https://api.deezer.com/artist/' + idTrack;
 let urlsongs = proxy + 'https://api.deezer.com/artist/' + idTrack + '/top?limit=5';
 let temas =null;
 let songsesion = null;
+let id = 0;
+
 
 
 
@@ -26,14 +28,23 @@ fetch(url)
             
        
     })
-//funcion para mandar la cancion a la p[laylist "sesion storage"]
-function cancionAplaylist(name){
-    console.log(name)
-   /* songsesion = { 
-        nombre:nombre, 
-        url:url
-    };*/
+//funcion para mandar la cancion a la p[laylist "local storage"]
+function cancionAplaylist(idsong){
+    console.log(idsong)
+if(idsong in localStorage) {
+    alert('esta cancion ya esta en tu playlist')
+ }
+ else{ 
+    localStorage.setItem(idsong, idsong);
+
+    var guardado = localStorage.getItem(idsong);
+
+    console.log('idsong',guardado);
+    // for (var i = 0; i < localStorage.length; i++){
+    //    console.log(localStorage.getItem(localStorage.key(i)));
+    // }
 }
+} 
     fetch(urlsongs)
     .then(function(response){
         return response.json();
@@ -51,7 +62,7 @@ function cancionAplaylist(name){
             let gnr = ''
 
             gnr +=      '<article>'
-            gnr +=       '<h3 class= "gnr-title">' +listaTemas[i].title + '<button onclick="cancionAplaylist()"> <i class="fa fa-plus" aria-hidden="true"></i></button></h3>'
+            gnr +=       '<h3 class= "gnr-title">' +listaTemas[i].title + '<button onclick="cancionAplaylist(\''+listaTemas[i].id + '\' )"> <i class="fa fa-plus" aria-hidden="true"></i></button></h3>'
             gnr +=   	  '<audio controls= "audio"' + ' source src="' + listaTemas[i].preview +' " type="audio/mpeg">'
             gnr +=   	  '</audio> </article>';
             
@@ -61,6 +72,7 @@ function cancionAplaylist(name){
 
         
        //falta que el button los guarde los temas en el local storage
+       
     })
 
 
