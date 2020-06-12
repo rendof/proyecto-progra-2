@@ -4,7 +4,7 @@ let idTrack = datos.get('id');
 
 
 let proxy = 'https://cors-anywhere.herokuapp.com/' ;
-let url = proxy + 'https://api.deezer.com/track/10583405' +idTrack ;
+let url = proxy + 'https://api.deezer.com/track/' + idTrack ;
 
 fetch (url)
 

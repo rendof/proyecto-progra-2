@@ -95,7 +95,7 @@ window.addEventListener('load', function() {
                 art +=      '</div>'
                 art +=      '</a>'
                 art +=      '<div id="div-trk">'
-                art +=      '<a href="detallealbum.html?id='+ topTracks[i].id+ '">'
+                art +=      '<a href="detalletrack.html?id='+ topTracks[i].id+ '">'
                 art +=          '<h3 class="artist-title">' + topTracks[i].title +'</h3>'
                 art +=      '</a>'
                 art +=      '<a href="detallealbum.html?id='+ topTracks[i].id+ '">'
