@@ -1,5 +1,11 @@
+let queryString = location.search;
+let datos = new URLSearchParams(queryString);
+let idTrack = datos.get('id');
+
+
+
 let proxy = 'https://cors-anywhere.herokuapp.com/' ;
-let url = proxy + 'https://api.deezer.com/album/302127' ;
+let url = proxy + 'https://api.deezer.com/album/' +idTrack;
 
 fetch (url)
 .then (function (respuesta)
