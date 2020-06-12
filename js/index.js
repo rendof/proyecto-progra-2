@@ -1,5 +1,15 @@
-window.addEventListener('load', function() {
+
     
+    //Spiner
+        let maincontainer = document.querySelector('.container')
+        let spinner = document.querySelector('#loader')
+
+    window.onload = function(){
+        loader.style.display = 'none'
+    }
+
+
+
     let queryString = location.search;
     let datos = new URLSearchParams(queryString);
 
@@ -109,5 +119,5 @@ window.addEventListener('load', function() {
         })
     
     
-})
+
 
