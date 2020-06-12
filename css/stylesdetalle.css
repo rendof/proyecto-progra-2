@@ -54,6 +54,7 @@ body{
 div.BBprincipal{
     text-align: center;
     align-items: center;
+    
 }
 .BPrincipal {
     border-radius: 50%;
@@ -143,7 +144,11 @@ div.BBprincipal{
     width: 95%;
     box-sizing: border-box;
 }
-.img-albumes720{
+.img-albumes768{
+    display: none;
+}
+
+.img-albumes1020 {
     display: none;
 }
 
@@ -159,12 +164,17 @@ div.BBprincipal{
 }
 .dosplaylists{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 .playlist1{
     width: 90%;
     background-color: white;
    
+}
+
+.playlist768{
+    display: none;
+
 }
 .playlist1720 {
     display: none;
@@ -181,7 +191,7 @@ div.BBprincipal{
 }
 .cincoartistas{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 .becky{
     box-sizing: border-box;
@@ -189,7 +199,11 @@ div.BBprincipal{
     border-radius: 50%;
    
 }
-.becky720{
+.becky768{
+    display: none;
+}
+
+.becky1020{
     display: none;
 }
 
@@ -257,37 +271,42 @@ footer p{
     font-size: 8px;
 }
 
-/*TABLET VERSION*/
+  /*TABLET VERSION*/
 @media only screen and (min-width: 768px){
 
     
-
+  /*albumes*/
     .dosalbumes{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
-    .siempre{
+
+    .img-albumes768{
         display: grid;
         width: 95%;
         box-sizing: border-box;
-
+       
     }
+     /*playlists*/
+
    .dosplaylists{
        display: grid;
-       grid-template-columns: 1fr 1fr 1fr;
+       grid-template-columns: 1fr 1fr 1fr 1fr;
    }
-   .playlist3{
-    display: grid;
-    width: 90%;
-   
-    box-sizing: border-box;
-   }
+    .playlist768{
+        display: grid;
+        width: 90%;
+        background-color: white;
+    }
+
+
+
 
    .cincoartistas{
        display: grid;
-       grid-template-columns: 1fr 1fr 1fr;
+       grid-template-columns: 1fr 1fr 1fr 1fr;
    }
-   .lunay{
+   .becky768{
        display: grid;
       box-sizing: border-box;
       width: 80%;
@@ -375,27 +394,23 @@ footer p{
         grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.nometes{
+     .img-albumes1020{
         display: grid;
         width: 95%;
         box-sizing: border-box;
 }
 
-.dosplaylists{
+ .dosplaylists{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
 }
-.playlist4{
+.playlist1720{
     display: grid;
     width: 90%;
     background-color: white;
    
 }
 
-.playlist5{
-    display: grid;
-    width: 90%;
-    background-color: white;
  
 }
 .cincoartistas{
@@ -403,31 +418,25 @@ footer p{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     margin: auto;
 }
-.ozuna{
+.becky1020{
     display: grid;
     box-sizing: border-box;
     width: 90%;
     border-radius: 50%;
     
 }
-.anuel{
-    display: grid;
-    box-sizing: border-box;
-    width: 90%;
-    border-radius: 50%;
-}
+
+
 
 .becky{
     width: 90%;
 }
-.daddy{
-    width: 90%;
+
+.becky768{
+    width: 90% ;
 }
-.lunay{
-    width: 90%;
-}
-footer{
+
+.footer{
     margin-bottom: 10px;
     margin-top: 20px;
-}
 }

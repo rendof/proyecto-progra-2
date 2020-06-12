@@ -1,0 +1,9 @@
+body{
+    background: linear-gradient(to bottom right, black, rgb(48, 46, 46),rgb(75, 74, 74));
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    display: grid;
+    text-align: center;
+}
+
