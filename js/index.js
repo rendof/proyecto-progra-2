@@ -37,7 +37,7 @@
                 art +=      '</a>'
                 art +=      '<a href="detalleartist.html?id='+topArtist[i].id+ '">'
                 art +=      '<div class="artist-title-div">'
-                art +=          '<h3 class= "artist-title mrg-btn ">' +topArtist[i].name + '</h3>'
+                art +=          '<h3 class= "artist-title mrg-btn mrg-left ">' +topArtist[i].name + '</h3>'
                 art +=      '</div>'
                 art +=      '</a>'
                 art += '</div>'

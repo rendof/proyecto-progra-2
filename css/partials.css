@@ -9,6 +9,28 @@ body.body{
     font-weight: 400;
     height: 100%;
 }
+
+/*TODO Spiner */
+#loader{
+    border: 15px solid #ccc;
+    border-top-color: #fa266a;
+    border-top-style: groove;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+
+    position: absolute;
+    /*top: 0;*/
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+    -webkit-animation: girar 1.5s linear infinite;
+    -o-animation: girar 1.5s linear infinite;
+    animation: girar 1.5s linear infinite;
+}
+
 /*header*/
 
 .header{
@@ -162,6 +184,7 @@ text-align: right;
         color: white;
         border-radius: 10px;
         height: 30px;
+        
     }
     .signinp2{
         border:none;
@@ -182,7 +205,7 @@ text-align: right;
         width: 400px;
         height: 29px;
     }
-        /*navegador*/
+        /*barra de navegaciónr*/
     .nav{
         width: 130px;
         height: 100%;
@@ -213,7 +236,12 @@ text-align: right;
         height: 30px;
     }
     .links:hover{
-        background-color:rgba(67, 67, 68, 0.185);        
+        background-color:rgba(67, 67, 68, 0.185);     
+        text-decoration: none;   
+    }
+    .a-link:hover{
+        text-decoration: none;
+        color: white;
     }
     .detalle-icon{
         font-size: 15px;
