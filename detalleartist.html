@@ -2,37 +2,109 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--CSS-->
     <link rel="stylesheet" href="css/detalleartist.css">
-     <!--iconos-->
-     <script src="https://kit.fontawesome.com/a0c0bb4f74.js" crossorigin="anonymous"></script>
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--JavaScript-->
-    
-   
-    <title>Artist</title>
+    <!--tipografía-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <!--iconos-->
+    <script src="https://kit.fontawesome.com/a0c0bb4f74.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We Sound Like Music</title>
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.3/dist/css/uikit.min.css" />
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.3/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.3/dist/js/uikit-icons.min.js"></script>
+
 </head>
-<body>
-    <h1> de ruta breo
-
-    </h1>
-
-    <ul class="artista">
-        
-
-    </ul>
- 
-        <div class= "songs">
-
+<body class="body">
+<div class="main-container">
+    <!--header-->
+    <header>
+        <div class="header">
+            <div class="superior">
+                <img class="img-barra" src="img/iconos/bars-solid.svg" alt="">
+                <img class="logo" src="img/logo transparente.png"alt="">
+            </div>
+            <div class="buscador">
+                <i id="lupa" class="fas fa-search"></i>
+                <form action="resultados.html" method="GET" class="buscador-form">
+                    <input type="text" name="search" placeholder="¿Qué queres buscar?" id="" class="buscador-input">
+                    <button type="submit" class="buscador-button">Buscar</button>
+                </form>
+            </div>
+            <div class="signin">
+                <button class="signinp1">REGISTRARSE</button>
+                <button class="signinp2">Iniciar sesión</button>
+            </div>
         </div>
-
-        
-            
-        
-
+    </header>
+ <!--barra de navegación-->
+    <div class="nav">
+        <article class="logocontainer">
+            <img class="logonav" src="img/We sound blanco.png" alt="">
+        </article>
+        <article class="links">
+            <a href="playlist.html">
+                <i id="icon" class="fas fa-headphones-alt"></i>
+            </a> 
+            <a href="playlist.html" >
+                <h2 class="detalle-icon">Playlist</h2>    
+            </a>
+        </article> 
+        <article class="links">  
+            <a href="index.html">  
+                <i id="icon" class="fas fa-home"></i>
+            </a>
+            <a href="index.html" >
+                <h2 class="detalle-icon">Home</h2>    
+            </a>
+        </article>    
+            <article class="links">
+            <a href="generos.html">
+                <i id="icon" class="fas fa-compact-disc"></i>
+            </a>
+            <a href="generos.html" >
+                <h2 class="detalle-icon">Géneros</h2>    
+            </a>
+        </article>
+    </div>
     
-        <!--JavaScript-->
-    <script src="./js/detalleartist.js"></script>
+    <div class="container">
+        <!--Artistas-->
+        <div class = "music-container">
+            <h2  class = "title">Artista</h2>
+            <div style="grid-template-columns: none !important; grid-template-rows: none !important;" class="content_artista">
+                    <!--Acá van el chart de Artist-->
+            </div>
+        </div>
+        <div class = "music-container">
+            <h2  class = "title">Albums</h2>
+            <div class = "content_albums">
+                    <!--Acá van el chart de Albums-->
+            </div>
+        </div>
+        <div class="music-container mas bordertop">
+            <h2 class="title">Top Tracks</h2>
+            <div class="content_tracks">
+                    <!--Acá van el chart de Canciones-->
+            </div>
+        </div>
+    </div>
+</div>
+    <!--footer-->
+    <footer>
+        <article>
+            <p class="p-deezer">Powered by: </p>
+            <img class="deezer" src="img/Mono_Full_White@2x.png" alt="">
+        </article>
+        <p class="creditos">Desarrollado por<br/>Martina Pawluk, Francisco José Rendo y Tomás Giampaoletti</p>
+    </footer>
+    
+</div>
+ <!--JavaScript-->
+ <script src="./js/detalleartist.js"></script>
 </body>
+ 
 </html>
