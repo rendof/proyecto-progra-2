@@ -42,36 +42,37 @@
             </div>
         </div>
     </header>
- <!--barra de navegación-->
-    <div class="nav">
-        <article class="logocontainer">
-            <img class="logonav" src="img/We sound blanco.png" alt="">
-        </article>
+  <!--barra de navegación-->
+  <div class="nav">
+    <article class="logocontainer">
+        <img class="logonav" src="img/We sound blanco.png" alt="">
+    </article>
+    <article class="links">
+        <a href="playlist.html">
+            <i id="icon" class="fas fa-headphones-alt"></i>
+        </a> 
+        <a href="playlist.html" >
+            <h2 class="detalle-icon">Playlist</h2>    
+        </a>
+    </article> 
+    <article class="links">  
+        <a href="index.html">  
+            <i id="icon" class="fas fa-home"></i>
+        </a>
+        <a href="index.html" >
+            <h2 class="detalle-icon">Home</h2>    
+        </a>
+    </article>    
         <article class="links">
-            <a href="playlist.html">
-                <i id="icon" class="fas fa-headphones-alt"></i>
-            </a> 
-            <a href="playlist.html" >
-                <h2 class="detalle-icon">Playlist</h2>    
-            </a>
-        </article> 
-        <article class="links">  
-            <a href="index.html">  
-                <i id="icon" class="fas fa-home"></i>
-            </a>
-            <a href="index.html" >
-                <h2 class="detalle-icon">Home</h2>    
-            </a>
-        </article>    
-            <article class="links">
-            <a href="generos.html">
-                <i id="icon" class="fas fa-compact-disc"></i>
-            </a>
-            <a href="generos.html" >
-                <h2 class="detalle-icon">Géneros</h2>    
-            </a>
-        </article>
-    </div>
+        <a href="generos.html">
+            <i id="icon" class="fas fa-compact-disc"></i>
+        </a>
+        <a href="generos.html" >
+            <h2 class="detalle-icon">Géneros</h2>    
+        </a>
+    </article>
+</div>
+
     <!--CONTAINER-->
         <!--Carrousel-->
     <div uk-slideshow="animation: slide; ratio: 16:9">
@@ -85,6 +86,13 @@
         </ul>
         <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
         <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+    </div>
+
+    <!--spinner-->
+    <div id="spinner">
+        <div id="loader">
+
+        </div>
     </div>
     <div class="container">
         <!--Artistas-->
@@ -107,7 +115,9 @@
             </div>
         </div>
     </div>
+
     <!--Reproductor-->
+
     <!--footer-->
     <footer>
         <article>
