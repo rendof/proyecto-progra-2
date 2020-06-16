@@ -37,22 +37,23 @@
                 </form>
             </div>
             <div class="signin">
-                <button class="signinp1">REGISTRARSE</button>
-                <button class="signinp2">Iniciar sesión</button>
+                <button class="signinp1">INICIAR</button>
             </div>
         </div>
     </header>
+
   <!--barra de navegación-->
   <div class="nav">
     <article class="logocontainer">
         <img class="logonav" src="img/We sound blanco.png" alt="">
     </article>
-    <article class="links">
-        <a class="a-link" href="playlist.html">
-            <i class="icon fas fa-headphones-alt"></i>
-        </a> 
-        <a class="a-link" href="playlist.html" >
-            <h2 class="detalle-icon">Playlist</h2>    
+    </article>    
+        <article class="links">
+        <a class="a-link" href="generos.html">
+            <i class="icon fas fa-compact-disc"></i>
+        </a>
+        <a class="a-link" href="generos.html" >
+            <h2 class="detalle-icon">Géneros</h2>    
         </a>
     </article> 
     <article class="links">  
@@ -63,29 +64,29 @@
             <h2 class="detalle-icon">Home</h2>    
         </a>
     </article>    
-        <article class="links">
-        <a class="a-link" href="generos.html">
-            <i class="icon fas fa-compact-disc"></i>
-        </a>
-        <a class="a-link" href="generos.html" >
-            <h2 class="detalle-icon">Géneros</h2>    
+    <article class="links">
+        <a class="a-link" href="playlist.html">
+            <i class="icon fas fa-headphones-alt"></i>
+        </a> 
+        <a class="a-link" href="playlist.html" >
+            <h2 class="detalle-icon">Playlist</h2>    
         </a>
     </article>
 </div>
 
     <!--CONTAINER-->
         <!--Carrousel-->
-    <div uk-slideshow="animation: slide; ratio: 16:9">
+    <div uk-slideshow="animation: slide; ratio: 16:9" style="position:relative">
         <ul class="uk-slideshow-items">
             <li>
                 <img class="banner" src="img/Pink and Blue Galaxy Gaming Youtube Channel Art.png" alt="" uk-cover>
             </li>
             <li>
-                <img src="img/sound.png" alt="" uk-cover>
+                <img src="img/smartmockups_kbh89dvn.jpg" alt="" uk-cover>
             </li>
         </ul>
-        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
-        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+        <a class="" href="#" uk-slidenav-previous uk-slideshow-item="previous" style="position: absolute; bottom: 10px; right: 55%"></a>
+        <a class="" href="#" uk-slidenav-next uk-slideshow-item="next" style="position: absolute; bottom: 10px; left: 55%"></a>
     </div>
 
     <!--spinner-->

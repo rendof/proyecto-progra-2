@@ -57,7 +57,7 @@
             return response.json();
         })
         .then(function(datos){  
-           // console.log(datos.data)     
+            //console.log(urlalbums)     
             let container = document.querySelector('.content_albums')
             let topAlbum = datos.data
     
@@ -90,7 +90,7 @@
             return response.json();
         })
         .then(function(datos){  
-            console.log(datos.data)     
+            //console.log(datos.data)     
             let container = document.querySelector('.content_tracks')
             let topTracks = datos.data
     

@@ -42,6 +42,7 @@ body.body{
 .header{
     text-align: center;
     padding: 20px;
+    padding-top: 25px;
 }
 .logo{
     width: 80%;
@@ -108,10 +109,13 @@ div article a{
 .links{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
 }
 .icon{
     margin-top: 5px;
-    font-size: 30px;
+    font-size: 25px;
     color: white;
     text-align: center;
 }
@@ -283,88 +287,6 @@ h2.first{
     height: 55px;
     width: 55px;
 }
-/*barra de navegación*/
-.logocontainer{
-    display: none;
-}
-.nav{
-    height: 55px;
-    background: linear-gradient(to bottom, #ff1e56, #ffac41);
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    text-align: center;
-}
-div article a{
-    text-align: center;
-}
-.links{
-    display: flex;
-    flex-direction: column;
-}
-.icon{
-    margin-top: 5px;
-    font-size: 30px;
-    color: white;
-    text-align: center;
-}
-.detalle-icon{
-    color: white;
-    margin: 0px;
-    font-weight: 700;
-    font-size: 10px;
-    text-align: center;
-    font-family: 'Varela Round', sans-serif;
-    margin-bottom: 5px;
-
-}
-.nav a{
-    text-decoration: none;
-    list-style: none;
-    color: white;
-    margin: 0px;
-}
-/*footer*/
-footer{
-    border-top: solid  rgba(187, 187, 187, 0.74) 1px;
-    margin-bottom: 54px;
-    margin-left: 20px;
-    margin-right: 20px;
-    display: flex;
-    align-items: center;
-}
-footer article{
-    display: flex;
-    flex-direction: column;
-    padding: 5px;
-}
-.deezer{
-    width: 80px;
-}
-.p-deezer{
-    color: rgba(255, 255, 255, 0.404);
-    margin: 0px;
-    font-size: 8px;
-}
-.creditos{
-    flex: 1;
-    text-align: right;
-    font-size: 8px;
-    padding: 5px;
-    margin: 0px;
-}
-.ctr-img{
-text-align: right;
-}
-.btn-track{
-    
-}
-.play{
- 
-}
 /* Tablet */
 @media (min-width: 768px){
     .content{
@@ -390,6 +312,7 @@ text-align: right;
         }
         .signinp1{
             background-color: #ff1e56d3;
+            font-family: 'Varela Round', sans-serif;
             border: none;
             font-size: 15px;
             color: white;
@@ -414,7 +337,7 @@ text-align: right;
         }
         .buscador{
             width: 400px;
-            height: 29px;
+            height: 30px;
         }
             /*barra de navegaciónr*/
         .nav{
@@ -457,6 +380,8 @@ text-align: right;
         .detalle-icon{
             font-size: 15px;
             text-align: left;
+            margin-bottom: 0px;
+
         }
         .icon{
             font-size: 15px;

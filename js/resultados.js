@@ -1,4 +1,14 @@
-//RESULTADOS 
+//RESULTADOS
+
+//Spinner
+let maincontainer = document.querySelector('.main-container')
+let spinner = document.querySelector('#loader')
+
+window.onload = function(){
+    spinner.style.display = 'none'
+}
+
+
 let queryString = location.search
     console.log (queryString)
 
@@ -17,6 +27,8 @@ var artist = document.querySelector('.r-artistas')
 var album = document.querySelector('.r-albums')
 var track = document.querySelector('.r-canciones')
 
+let title = document.querySelector('.main-title')
+title.innerHTML += ' ' + search
 //Búsqueda Artistas
 //artistas principales
 fetch(urlArtist)

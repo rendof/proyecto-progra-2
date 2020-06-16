@@ -15,59 +15,61 @@
     <title>Resultados</title>
 </head>
 <body class="body">
-    <!--header-->
-    <header>
-        <div class="header">
-            <div class="superior">
-                <img class="img-barra" src="img/iconos/bars-solid.svg" alt="">
-                <img class="logo" src="img/logo transparente.png"alt="">
+        <!--header-->
+        <header>
+            <div class="header">
+                <div class="superior">
+                    <img class="img-barra" src="img/iconos/bars-solid.svg" alt="">
+                    <img class="logo" src="img/logo transparente.png"alt="">
+                </div>
+                <div class="buscador">
+                    <i id="lupa" class="fas fa-search"></i>
+                    <form action="resultados.html" method="GET" class="buscador-form">
+                        <input type="text" name="search" placeholder="¿Qué queres buscar?" id="" class="buscador-input">
+                        <button type="submit" class="buscador-button">Buscar</button>
+                    </form>
+                </div>
+                <div class="signin">
+                    <button class="signinp1">REGISTRARSE</button>
+                    <button class="signinp2">Iniciar sesión</button>
+                </div>
             </div>
-            <div class="buscador">
-                <i id="lupa" class="fas fa-search"></i>
-                <form action="resultados.html" method="GET" class="buscador-form">
-                    <input type="text" name="search" placeholder="¿Qué queres buscar?" id="" class="buscador-input">
-                    <button type="submit" class="buscador-button">|     Buscar</button>
-                </form>
-            </div>
-            <div class="signin">
-                <button class="signinp1">REGISTRARSE</button>
-                <button class="signinp2">Iniciar sesión</button>
-            </div>
-        </div>
-    </header>
-  <!--barra de navegación-->
-    <div class="nav">
+        </header>
+    
+      <!--barra de navegación-->
+      <div class="nav">
         <article class="logocontainer">
             <img class="logonav" src="img/We sound blanco.png" alt="">
         </article>
-        <article class="links">
-            <a class="a-link href="playlist.html">
-                <i id="icon" class="fas fa-headphones-alt"></i>
-            </a> 
-            <a class="a-link" href="playlist.html" >
-                <h2 class="detalle-icon">Playlist</h2>    
+        </article>    
+            <article class="links">
+            <a class="a-link" href="generos.html">
+                <i class="icon fas fa-compact-disc"></i>
+            </a>
+            <a class="a-link" href="generos.html" >
+                <h2 class="detalle-icon">Géneros</h2>    
             </a>
         </article> 
         <article class="links">  
-            <a class="a-link href="index.html">  
-                <i id="icon" class="fas fa-home"></i>
+            <a class="a-link" href="index.html">  
+                <i class="icon fas fa-home"></i>
             </a>
-            <a class="a-link href="index.html" >
+            <a class="a-link" href="index.html" >
                 <h2 class="detalle-icon">Home</h2>    
             </a>
         </article>    
-            <article class="links">
-            <a class="a-link href="generos.html">
-                <i id="icon" class="fas fa-compact-disc"></i>
-            </a>
-            <a class="a-link href="generos.html" >
-                <h2 class="detalle-icon">Géneros</h2>    
+        <article class="links">
+            <a class="a-link" href="playlist.html">
+                <i class="icon fas fa-headphones-alt"></i>
+            </a> 
+            <a class="a-link" href="playlist.html" >
+                <h2 class="detalle-icon">Playlist</h2>    
             </a>
         </article>
     </div>
     <!--CONTAINER-->  
     <div class="main-title-div"> 
-        <h1 class="main-title">Resultados de tu busqueda</h1>
+        <h1 class="main-title">Resultados relacionados a </h1>
     </div> 
     </div>
 
@@ -97,7 +99,7 @@
             <a href="" class="a-menos-album ver">Ver menos resultados</a>
         </div>
 
-        <div class="results">
+        <div class="results grid-column">
             <h2 class="title">Canciones</h2>
             <div class="r-canciones flex list">
                 <!--Acá van los resultados que son Tracks principales-->
