@@ -1,13 +1,13 @@
 //RESULTADOS
 
 //Spinner
-let maincontainer = document.querySelector('.main-container')
-let spinner = document.querySelector('#loader')
-
-window.onload = function(){
+window.addEventListener("load", function(event) {
+    let spinner = document.querySelector('#spinner')
+    let body = document.querySelector('body')
+    
     spinner.style.display = 'none'
-}
-
+    body.style.opacity = 'unset'
+});
 
 let queryString = location.search
     console.log (queryString)

@@ -5,12 +5,13 @@ font-family: 'Varela Round', sans-serif;
 */
 /*mobile version*/
 body.body{
-    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.897), rgb(47, 47, 47)); background-repeat: no-repeat;
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.897), rgb(47, 47, 47));
     font-family: 'Montserrat', sans-serif;
     color: white;
     margin: 0px;
     font-weight: 400;
     height: 100%;
+    opacity: 80%;
 }
 
 /** Spiner **/
@@ -37,6 +38,24 @@ body.body{
 @keyframes girar {
     from { transform: rotate(0deg);}
     to { transform: rotate(360deg);}
+}
+.p-loader{
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 20px;
+    text-align: center
+
+}
+.div-p-loader{
+    height: 100px;
+    width: 140px;
+    border-radius: 100%;
+    position: fixed;
+    top: 160px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
 }
 
 /*header*/

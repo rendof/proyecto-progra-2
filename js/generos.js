@@ -1,3 +1,14 @@
+//Generos
+
+//Spinner
+window.addEventListener("load", function(event) {
+    let spinner = document.querySelector('#spinner')
+    let body = document.querySelector('body')
+    
+    spinner.style.display = 'none'
+    body.style.opacity = 'unset'
+});
+
 let queryString = location.search;
 let datos = new URLSearchParams(queryString);
 

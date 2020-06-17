@@ -1,13 +1,14 @@
 
     
     //Spiner
-        let maincontainer = document.querySelector('.container')
-        let spinner = document.querySelector('#loader')
 
-    window.onload = function(){
-        loader.style.display = 'none'
-    }
-
+    window.addEventListener("load", function(event) {
+        let spinner = document.querySelector('#spinner')
+        let body = document.querySelector('body')
+        
+        spinner.style.display = 'none'
+        body.style.opacity = 'unset'
+    });
 
 
     let queryString = location.search;
@@ -17,7 +18,7 @@
     let urlartists = proxy + 'https://api.deezer.com/chart/0/artists'
     let urltracks = proxy + 'https://api.deezer.com/chart/0/tracks'
     let urlalbums = proxy + 'https://api.deezer.com/chart/0/albums'
-  
+
     //Artistas
     fetch(urlartists)
         .then(function(response){

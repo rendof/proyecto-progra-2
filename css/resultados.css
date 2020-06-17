@@ -156,17 +156,8 @@ a{
 /*Compu*/ 
 @media (min-width:1024px){
         /*container*/
-        .main-container{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
-            column-gap: 10px;
-        }
         h2.first{
             margin-top: 20px;
-        }
-        .grid-column{
-            grid-column: 1/3;
         }
         /*CLASES*/
         .mas{

@@ -10,6 +10,7 @@ body.body{
     margin: 0px;
     font-weight: 400;
     height: 100%;
+    opacity: 80%;
 }
 
 /** Spiner **/
@@ -37,7 +38,24 @@ body.body{
     from { transform: rotate(0deg);}
     to { transform: rotate(360deg);}
 }
+.p-loader{
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 20px;
+    text-align: center
 
+}
+.div-p-loader{
+    height: 100px;
+    width: 140px;
+    border-radius: 100%;
+    position: fixed;
+    top: 160px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
 /*header*/
 .header{
     text-align: center;
@@ -279,7 +297,7 @@ h2.first{
 .mrg-left{
     margin-left: 10px
 }
-.mrg-btn{;
+.mrg-btn{
     margin-bottom: 0px;
     margin-top: 0px;
 }
