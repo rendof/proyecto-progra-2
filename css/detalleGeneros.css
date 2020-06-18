@@ -24,6 +24,10 @@ body{
     border-radius: 15px;
     height: 20px;
     align-items: center;
+    margin-left: 110px;
+}
+.signin{
+    padding-right: 5px;
 }
 #lupa{
     margin-left: 10px;
@@ -113,4 +117,13 @@ footer p{
 .genero{
     width:100%;
     height: 100%;
+}
+.titulo{
+    margin-left: 150px;
+}
+.perri{
+    margin-left: 200px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
 }
