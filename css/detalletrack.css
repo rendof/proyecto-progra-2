@@ -1,13 +1,45 @@
-body{
-    background: linear-gradient(to bottom right, black, rgb(48, 46, 46),rgb(75, 74, 74));
-    font-family: 'Montserrat', sans-serif;
-    color: white;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+.body{
     display: grid;
-    text-align: center;
+}
+
+.imagen {
+    border-radius: 100%;
+    display: block;
+    margin: auto;
 }
 
 .boton {
+    display: block;
     width: 50%;
+    margin: auto;
+    margin-bottom: 50px;
+    color: black;
+    border: 0px solid;
+    padding: 2px;
+    background:white;
+    border-radius: 30px;
+    
+   
+    
+  
 }
+
+.tracknombre {
+    text-align: center;
+}
+
+.nombreartist {
+    text-align: center;
+}
+
+.duracion {
+    text-align: center;
+}
+
+.nombrealbum{
+    text-align: center;
+    
+}
+
 
