@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/playlist.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700&display=swap" rel="stylesheet"><!--tipografía-->
     <script src="https://kit.fontawesome.com/a0c0bb4f74.js" crossorigin="anonymous"></script> <!--iconos-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Playlist</title>
 </head>
-<body>
+<body class="body">
+    
      <!--header-->
      <header>
         <div class="header">
@@ -18,13 +20,16 @@
             </div>
             <div class="buscador">
                 <i id="lupa" class="fas fa-search"></i>
-                <h2 class="buscador-text">*acá va el buscador ponele*</h2> 
+                <form action="resultados.html" method="GET" class="buscador-form">
+                    <input type="text" name="search" placeholder="¿Qué queres buscar?" id="" class="buscador-input">
+                    <button type="submit" class="buscador-button">Buscar</button>
+                </form>
             </div>
             <div class="signin">
-                <h2 class="signinp"><strong>REGISTRARSE</strong> / INICIAR SESIÓN</h2>
+                <button class="signinp1">INICIAR</button>
             </div>
         </div>
-    </header>
+        </header>
     
     
     </div>
@@ -66,22 +71,29 @@
     
 
 </div>
-<body>
 
-    <h1>Tu playlist</h1>
-    <div class="atr">
 
-    </div>
-</body>
-     <!--footer-->
-     <!-- <footer>
-        <article>
-            <p class="deezer">Powered by: </p>
-            <img class="deezer" src="img/logo deezer/Mono_Full_Black@2x.png" alt="">
-        </article>
-        <p class="creditos">Desarrollado por<br/>Martina Pawluk, Francisco José Rendo y Tomás Giampaoletti</p>
-    </footer> -->
+
+    <div class="container">
+
+        <!--Escuchados hoy-->
+        <div class = "music-container">
+            <h2  class = "title first">Tu playlist</h2>
+            <div class="playlist">
+
+            </div>
+        </div>
+        
+        
+
+        </div>
+
     
     <script src="./js/playlist.js"></script>
+
+
+    
 </body>
 </html>
+
+

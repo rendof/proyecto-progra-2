@@ -35,17 +35,34 @@ function sacardeplaylist(key){
 
 function armaraudio(listacanciones,key){
   
-    let container = document.querySelector('.atr');
+    let container = document.querySelector('.playlist');
     console.log(container);
                let gnr = ''
                
                gnr +=      '<article>'
-               gnr +=       '<h3 class= "gnr-title">' +listacanciones.title + '<button onclick="sacardeplaylist(\''+key+ '\' )"> <i class="fa fa-ban" aria-hidden="true"></i></button></h3>'
-               gnr +=   	  '<audio controls= "audio"' + ' source src="' + listacanciones.preview +' " type="audio/mpeg">'
+               gnr +=       '<h3 class= "gnr-title">' +listacanciones.title + '<button style="margin-left:15px" onclick="sacardeplaylist(\''+key+ '\' )"> <i class="fa fa-ban" aria-hidden="true"></i></button></h3>'
+               gnr +=   	  '<audio style="width: 75%" onplay="añadirRecientes(\''+listacanciones.id + '\' ) "controls= "audio"' + ' source src="' + listacanciones.preview +' " type="audio/mpeg">'
                gnr +=   	  '</audio> </article>'
                
                container.innerHTML += gnr;
                console.log(gnr)
    
 }
+
+//funcion para mandar la cancion a la p[laylist "sessiomn storage"]
+function añadirRecientes(idsong){
+    console.log(idsong)
+    if(idsong in sessionStorage) {
+       
+    }
+    else{ 
+        sessionStorage.setItem(idsong, idsong);
+
+        var guardadoSession = sessionStorage.getItem(idsong);
+
+        //console.log('idsong',guardado);
+    
+    }
+}
    
+//gnr +=   	  '<audio onplay="añadirRecientes(\''+listaTemas[i].id + '\' ) "controls= "audio"' + ' source src="' + listaTemas[i].preview +' " type="audio/mpeg" style="margin-left:31px;margin-bottom:7px;">'
