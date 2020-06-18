@@ -408,7 +408,7 @@ h2.first{
             font-size: 15px;
         }
         .hoy{
-            display: block;
+            display: grid;
         }
         /*conteiner*/
         body.body{
