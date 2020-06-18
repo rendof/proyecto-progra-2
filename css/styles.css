@@ -153,6 +153,9 @@ div article a{
     color: white;
     margin: 0px;
 }
+.hoy{
+    display: none;
+}
 /*footer*/
 footer{
     border-top: solid  rgba(187, 187, 187, 0.74) 1px;
@@ -403,6 +406,9 @@ h2.first{
         }
         .icon{
             font-size: 15px;
+        }
+        .hoy{
+            display: block;
         }
         /*conteiner*/
         body.body{
