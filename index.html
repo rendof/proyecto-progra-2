@@ -41,7 +41,6 @@
             </div>
         </div>
         </header>
-
     <!--barra de navegación-->
     <div class="nav">
         <article class="logocontainer">
@@ -72,10 +71,16 @@
                 <h2 class="detalle-icon">Playlist</h2>    
             </a>
         </article>
-        </div>
-
-    <!--CONTAINER-->
-        <!--Carrousel-->
+        <article class="links">
+            <a class="a-link" href="escuchadosHoy.html">
+                <i class="icon fas fa-play-circle"></i>
+            </a> 
+            <a class="a-link" href="escuchadosHoy.html" >
+                <h2 class="detalle-icon hoy">Escuchado Hoy</h2>    
+            </a>
+        </article>
+    </div>
+    <!--Carrousel-->
     <div uk-slideshow="animation: slide; ratio: 16:9" style="position:relative">
         <ul class="uk-slideshow-items">
             <li>
@@ -88,17 +93,13 @@
         <a class="" href="#" uk-slidenav-previous uk-slideshow-item="previous" style="position: absolute; bottom: 10px; right: 55%"></a>
         <a class="" href="#" uk-slidenav-next uk-slideshow-item="next" style="position: absolute; bottom: 10px; left: 55%"></a>
     </div>
-
     <!--spinner-->
     <div id="spinner">
-        <div class="div-p-loader">
-            <h3 class="p-loader">cargando ...</h3>
-        </div>
+        <div class="div-p-loader"><h3 class="p-loader">cargando ...</h3></div>
         <div id="loader"></div>
     </div>
-
+    <!--container-->
     <div class="container">
-
         <!--Artistas-->
         <div class = "music-container">
             <h2  class = "title first">Artistas</h2>
@@ -118,11 +119,8 @@
                     <!--Acá van el chart de Canciones-->
             </div>
         </div>
-
     </div>
-
     <!--Reproductor-->
-
     <!--footer-->
     <footer>
         <article>

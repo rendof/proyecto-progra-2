@@ -67,6 +67,7 @@ fetch(url)
            art +=      '<a href="detalleartist.html?id='+topArtist.id+ '">'
            art +=      '<div class="artist-title-div">'
            art +=          '<h3 class= "artist-title mrg-btn ">' +topArtist.name + '</h3>'
+           art +=          '<h5 class= "artist-title mrg-btn ">' +'Seguidores: ' +topArtist.nb_fan + '</h5>'
            art +=      '</div>'
            art +=      '</a>'
            art += '</div>'
@@ -115,18 +116,32 @@ if(idsong in localStorage) {
             gnr +=      '</a>'
             gnr +=      '<article>'
             gnr +=       '<h3 class= "gnr-title" style="color:white;margin-left:10px" >' +listaTemas[i].title + '<button style="margin-left:5px;" onclick="cancionAplaylist(\''+listaTemas[i].id + '\' )"> <i class="fa fa-plus" aria-hidden="true"></i></button></h3>'
-            gnr +=   	  '<audio controls= "audio"' + ' source src="' + listaTemas[i].preview +' " type="audio/mpeg" style="margin-left:31px;margin-bottom:7px;">'
+            gnr +=   	  '<audio onplay="añadirRecientes(\''+listaTemas[i].id + '\' ) "controls= "audio"' + ' source src="' + listaTemas[i].preview +' " type="audio/mpeg" style="margin-left:31px;margin-bottom:7px;">'
             gnr +=   	  '</audio> </article>';
             gnr +=      '</div>'
             container.innerHTML += gnr;
+            console.log(gnr)
 
-            }
-
-        
-       //falta que el button los guarde los temas en el local storage
-       
+            
+        }
     })
-    console.log(urlalbums)
+
+    //funcion para mandar la cancion a la p[laylist "sessiomn storage"]
+function añadirRecientes(idsong){
+    console.log(idsong)
+    if(idsong in sessionStorage) {
+       
+    }
+    else{ 
+        sessionStorage.setItem(idsong, idsong);
+
+        var guardadoSession = sessionStorage.getItem(idsong);
+
+        //console.log('idsong',guardado);
+    
+    }
+}
+  
 
     
 

@@ -1,4 +1,14 @@
 /** MOBILE VERSION **/
+body.body{
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.897), rgb(47, 47, 47));
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    margin: 0px;
+    font-weight: 400;
+    height: 100%;
+    opacity: 80%;
+}
+
 /* CONTAINER */
 .gnr-container{
     display: flex;
