@@ -219,6 +219,8 @@ h2.first{
 .content_artista{
     display: flex;
     flex-direction: column;
+    text-align: center;
+    text-decoration: solid;
 }
 .content_albums{
     display: flex;
@@ -249,6 +251,7 @@ h2.first{
 }
 .portadas:hover{
     background: rgba(104, 104, 104, 0.123);
+    margin-left: 30px;
 }
 .artist-title{
     font-weight: 600;
@@ -308,6 +311,8 @@ h2.first{
     height: 55px;
     width: 55px;
 }
+
+
 /* Tablet */
 @media (min-width: 768px){
     .content{

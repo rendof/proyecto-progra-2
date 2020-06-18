@@ -1,38 +1,83 @@
 
 .body{
-    display: grid;
+    display: inline-flexbox;
+    
 }
 
 .imagen {
     border-radius: 100%;
+    width: 60%;
     display: block;
     margin: auto;
 }
 
 .boton {
-    display: block;
-    width: 50%;
-    margin: auto;
-    margin-bottom: 50px;
-    color: black;
-    border: 0px solid;
-    padding: 2px;
-    background:white;
-    border-radius: 30px;
     
-   
+    width: 15%;
+    height: 30%;
+    position: relative;
+    left: 3%;
+    top: 37%;
+    color: black;
+    opacity: 50%;
+    border: 0px solid;
+    padding: 0px;
+    background:linear-gradient(to bottom, #ff1e56, #ffac41);;
+    border-radius: 10px;
+    font-size: 10px;
     
   
 }
 
+.boton:active {
+    box-shadow:0 5px #666;
+    transform: translateY(4px);
+}
+
+.boton:hover {
+    background: transparent;
+    border: 3px solid #ff1e56;
+    color: white;
+    box-shadow:0 3px #ff1e56;
+    transform: translateY(4px);
+}
+
+.agregar{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-bottom: 0px;
+    height: 30%;
+}
+
 .tracknombre {
-    text-align: center;
+    display: block;
+    text-align: right;
+    margin: 0px;
+    font-size: 10px;
+   
+    
+    
 }
 
 .nombreartist {
     text-align: center;
+    position: relative;
+    font-size: 6px;
+    opacity: 30%;
+    font-weight: 100px;
 }
 
+.nombreartist:hover {
+  
+    transform: translateY(2px);
+
+}
+
+.cancion {
+    display: block;
+    margin: auto;
+    width: 70%;
+}
 .duracion {
     text-align: center;
 }
@@ -43,3 +88,44 @@
 }
 
 
+
+
+/* Tablet */
+
+@media (min-width: 768px){
+.nombreartist{
+    left: 0px;
+    font-size: 20px;
+    
+}
+  .agregar{
+      grid-template-columns: 3fr 1fr;
+  }  
+
+  .tracknombre{
+      font-size: 30px;
+  }
+
+  .boton{
+      width: 50px;
+      font-size: 25px;
+  }
+}
+
+/* compu */
+@media (min-width:1024px){
+    .nombreartist{
+        position: relative;
+        left: 0px;
+    text-align: center;
+}
+
+.agregar{
+    grid-template-columns: 2fr 1fr;
+}
+
+.imagen{
+    width: 35%;
+}
+   
+}
