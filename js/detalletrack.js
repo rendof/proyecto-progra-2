@@ -17,11 +17,11 @@ fetch (url)
     let nombreTrack = document.querySelector ('.tracknombre') ;
     nombreTrack.innerHTML = '<h1>' + datatrack.title + '</h1>' ;
     let imagen = document.querySelector ('.img')
-    imagen.innerHTML = '<img src="' + datatrack.artist.picture_big + '" >'
+    imagen.innerHTML = '<img class= "imagen" src="' + datatrack.artist.picture_big + '" >'
     let nombreArtist = document.querySelector ('.nombreartist')
     nombreArtist.innerHTML = '<h2>' + datatrack.artist.name + '</h2>'
     let duration = document.querySelector ('.duracion')
-    duration.innerHTML = '<h3>' + datatrack.duration + '</h3>'
+    duration.innerHTML = '<h3>' + datatrack.duration + ' segundos' + '</h3>'
     let nameAlbum = document.querySelector ('.nombrealbum')
     nameAlbum.innerHTML = '<h4>' + datatrack.album.title + '</h4>'
     let button = document.querySelector ('.boton') 
