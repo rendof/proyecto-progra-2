@@ -26,8 +26,8 @@ fetch (url)
     duration.innerHTML = '<h3>' + datatrack.duration + ' segundos' + '</h3>'
     let nameAlbum = document.querySelector ('.nombrealbum')
     nameAlbum.innerHTML = '<a class= "link" href = "detallealbum.html?id='+datatrack.album.id+'"><h4>' + 'Álbum ' + datatrack.album.title + '</h4>'
-    let button = document.querySelector ('.boton') 
-    button.innerHTML = '<button>' + detalle + '</button>'
+    //let button = document.querySelector ('.boton') 
+    //button.innerHTML = '<button>' + detalle + '</button>'
 })
 
 // agregar track a la playlist
@@ -36,8 +36,40 @@ fetch (url)
                alert ('Se ha agregado a tu playlist')
         }
 
-  let like = document.querySelector ('#heart')
-      like.onclick = function () {
-        alert ('Se ha agregado a canciones que te gustan')
+
+    
+//agregados recientemente
+    
+    function armaraudio(listacanciones,key){
+  
+        let container = document.querySelector('.playlist');
+        console.log(container);
+                   let gnr = ''
+                   
+                   gnr +=      '<article>'
+                   gnr +=       '<h3 class= "gnr-title">' +listacanciones.title + '<button style="margin-left:15px" onclick="sacardeplaylist(\''+key+ '\' )"> <i class="fa fa-ban" aria-hidden="true"></i></button></h3>'
+                   gnr +=   	  '<audio class="audio-movile"style="width: 75%" onplay="añadirRecientes(\''+listacanciones.id + '\' ) "controls= "audio"' + ' source src="' + listacanciones.preview +' " type="audio/mpeg">'
+                   gnr +=   	  '</audio> </article>'
+                   
+                   container.innerHTML += gnr;
+                   console.log(gnr)
+       
     }
+    
+    //funcion para mandar la cancion a recientes "sessiomn storage"]
+    function añadirRecientes(idsong){
+        console.log(idsong)
+        if(idsong in sessionStorage) {
+           
+        }
+        else{ 
+            sessionStorage.setItem(idsong, idsong);
+    
+            var guardadoSession = sessionStorage.getItem(idsong);
+    
+        
+        }
+    }
+    
+    
       

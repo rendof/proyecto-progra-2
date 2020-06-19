@@ -25,6 +25,7 @@ fetch (url)
 
     let salidaAlbum = document.querySelector ('.salidaalbum') ;
     salidaAlbum.innerHTML = '<p>'+ 'Álbum • ' +detalle.release_date + '</p>' ;
+    
 
     fetch (proxy + detalle.tracklist)
     .then (function (respuesta)

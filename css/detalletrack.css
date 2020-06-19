@@ -143,15 +143,7 @@
       width: 50px;
       font-size: 25px;
   }
-  .corazon{
-      position: relative;
-      right: 30px;
-      top: 10px;
-  }
-  #heart
-  {
-      font-size: 30px;
-  }
+
 }
 
 /* compu */
@@ -163,24 +155,17 @@
 }
 
 .agregar{
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
 }
 
 .imagen{
     width: 35%;
 }
-   .corazon{
-    right: 500px;   
-    top: 780px
-   }
 
-   .corazon{
-       position: relative;
-    right: 60px;
-    top: 10px;
-   }
-   #heart{
-    font-size: 40px;
-   }
+.tracknombre{
+    text-align: right;
+}
+   
    
 }

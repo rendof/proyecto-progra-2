@@ -1,11 +1,11 @@
 .tituloalbum{
-    text-align: left;
+    text-align: center;
     font-size: 10px;
     margin-left: 20px;
 }
 
 .artistname{
-    text-align: left;
+    text-align: center;
     position: relative;
     top: 10px;
     margin-left: 20px;
@@ -22,7 +22,7 @@
     transform: translateY(2px);
 }
 .salidaalbum{
-    text-align: left;
+    text-align: center;
     margin-left: 20px;
 }
 .hola{
@@ -32,7 +32,7 @@
 .img{
     display: block;
     margin: auto;
-    width: 20px;
+    width: 70%;
 }
 
 
@@ -64,25 +64,31 @@
     .img{
         display: block;
         margin: auto;
-        width: 20px;
+        width: 70%;
     }
     
 }
 
 @media (min-width:1024px){
-    .cuerpo{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
+   
     .hola{
         margin-top: 30px;
         margin-bottom: 30px;
+         display: grid;
+       grid-template-rows: 1fr;
        
+    }
+
+    .arriba{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
     
     .descripcion{
-       margin-top: 100px;
-       margin-right: 200px;
+        display: grid;
+        grid-template-rows: 1fr 1fr 0fr ;
+       
+      
 
     }
     .img{
@@ -91,19 +97,23 @@
     }
 
     .tituloalbum{
-        font-size: 50px;
+        font-size: 30px;
         text-align: center;
-        margin-left: 0px;
-        margin-top: 160px;
+        height: auto;
+        position: relative;
+        margin-bottom: 0px;
+       
     }
     .artistname{
-        text-align: left;
-        margin-left: 0px;
+        text-align: center;
+       
     }
     .salidaalbum{
-        text-align: left;
-        margin-left: 0px;
-        margin-top: 40px;
+        text-align: center;
+        position: absolute;
+       margin-bottom: 0px;
+       margin-left: 0px;
     }
+    
 }
 
