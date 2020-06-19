@@ -126,7 +126,9 @@ body.body{
     height: 55px;
     width: 55px;
 }
-
+.player{
+    height: 40px;
+}
 /* Tablet */
 @media (min-width: 768px){
     .content{
