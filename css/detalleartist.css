@@ -167,7 +167,7 @@ a{
 .player{
     height: 30px;
     margin: 0px;
-    width: 250px;
+    width: 100%;
 }
 .audio-div{
     width: 100%;
