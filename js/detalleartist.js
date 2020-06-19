@@ -108,18 +108,20 @@ if(idsong in localStorage) {
             
             let gnr = ''
             gnr += 		'<div class="music laptop mrg-btn">'
-          	gnr +=      '<p class="puesto">' +[i]+ '° </p>'
-            gnr +=      '<a href="detallealbum.html?id='+ listaTemas[i].id+ '">'
-            gnr +=      '<div class="div-img">'
-            gnr +=           '<img class="portadas mobile laptop autoheight filtro" src="' + listaTemas[i].album.cover_medium + '">'
-            gnr +=      '</div>'
-            gnr +=      '</a>'
-            gnr +=      '<article>'
-            gnr +=       '<h3 class= "gnr-title" style="color:white;margin-left:10px" >' +listaTemas[i].title + '<button style="margin-left:5px;" onclick="cancionAplaylist(\''+listaTemas[i].id + '\' )"> <i class="fa fa-plus" aria-hidden="true"></i></button></h3>'
-            gnr +=   	  '<audio onplay="añadirRecientes(\''+listaTemas[i].id + '\' ) "controls= "audio"' + ' source src="' + listaTemas[i].preview +' " type="audio/mpeg" style="margin-left:31px;margin-bottom:7px;">'
-            gnr +=   	  '</audio> </article>';
+          	gnr +=          '<p class="puesto">' +[i]+ '° </p>'
+            gnr +=          '<a href="detallealbum.html?id='+ listaTemas[i].id+ '">'
+            gnr +=              '<div class="div-img">'
+            gnr +=                  '<img class="portadas mobile laptop autoheight filtro" src="' + listaTemas[i].album.cover_medium + '">'
+            gnr +=              '</div>'
+            gnr +=          '</a>'
+            gnr +=          '<article>'
+            gnr +=              '<h3 class= "gnr-title" style="color:white;margin-left:10px" >' +listaTemas[i].title + '<button style="margin-left:5px;" onclick="cancionAplaylist(\''+listaTemas[i].id + '\' )"> <i class="fa fa-plus" aria-hidden="true"></i></button></h3>'
+            gnr +=   	        '<audio class="player" onplay="añadirRecientes(\''+listaTemas[i].id + '\' ) "controls= "audio"' + ' source src="' + listaTemas[i].preview +' " type="audio/mpeg" style="margin-left:31px;margin-bottom:7px;">'
+            gnr +=   	        '</audio>' 
+            gnr +=          '</article>';
             gnr +=      '</div>'
             container.innerHTML += gnr;
+            
             console.log(gnr)
 
             

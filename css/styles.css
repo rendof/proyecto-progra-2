@@ -312,9 +312,7 @@ h2.first{
     width: 55px;
 }
 
-.artist-title{
-    margin-left: 25px;
-}
+
 /* Tablet */
 @media (min-width: 768px){
     .content{
@@ -415,7 +413,7 @@ h2.first{
             font-size: 15px;
         }
         .hoy{
-            display: block;
+            display: grid;
         }
         /*conteiner*/
         body.body{
@@ -431,7 +429,6 @@ h2.first{
             grid-template-columns: 1fr 1fr;
             column-gap: 10px;
             row-gap: 10px;
-            margin-left: 150px;
             
         }
         .content_albums{
