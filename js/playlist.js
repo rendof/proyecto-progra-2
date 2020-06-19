@@ -41,7 +41,7 @@ function armaraudio(listacanciones,key){
                
                gnr +=      '<article>'
                gnr +=       '<h3 class= "gnr-title">' +listacanciones.title + '<button style="margin-left:15px" onclick="sacardeplaylist(\''+key+ '\' )"> <i class="fa fa-ban" aria-hidden="true"></i></button></h3>'
-               gnr +=   	  '<audio class="audio-movile"style="width: 75%" onplay="añadirRecientes(\''+listacanciones.id + '\' ) "controls= "audio"' + ' source src="' + listacanciones.preview +' " type="audio/mpeg">'
+               gnr +=   	  '<audio class="audio-movile" style="width: 75%" onplay="añadirRecientes(\''+listacanciones.id + '\' ) "controls= "audio"' + ' source src="' + listacanciones.preview +' " type="audio/mpeg">'
                gnr +=   	  '</audio> </article>'
                
                container.innerHTML += gnr;
@@ -102,7 +102,7 @@ function armaraudio2(listacanciones){
                
                gnr +=      '<article>'
                gnr +=       '<h3 class= "gnr-title">' +listacanciones.title + '<button style="margin-left:5px;" onclick="cancionAplaylist(\''+listacanciones.id + '\' )"> <i class="fa fa-plus" aria-hidden="true"></i></button> </h3>'
-               gnr +=   	  '<audio controls= "audio"' + ' source src="' + listacanciones.preview +' " type="audio/mpeg">'
+               gnr +=   	  '<audio class="audio-movile" controls= "audio"' + ' source src="' + listacanciones.preview +' " type="audio/mpeg">'
 
                gnr +=   	  '</audio> </article>'
                
