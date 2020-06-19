@@ -6,7 +6,7 @@ let idArtist = datos.get('id');
 
 let proxy = 'https://cors-anywhere.herokuapp.com/';
 let url = proxy + 'https://api.deezer.com/artist/' + idArtist;
-let urlsongs = proxy + 'https://api.deezer.com/artist/' + idArtist + '/top?limit=10';
+let urlsongs = proxy + 'https://api.deezer.com/artist/' + idArtist + '/top?limit=11';
 let urlalbums = proxy + 'https://api.deezer.com/artist/' + idArtist + '/albums';
 console.log(urlalbums);
 let temas =null;  //quiere decir que no tiene cargado ningun valor 
@@ -35,8 +35,9 @@ fetch(urlalbums)
             art +=      '</a>'
             art +=      '<div id="div-alb"'
             art +=      '<a href="detallealbum.html?id='+ topAlbum[i].id+ '">'
-            art +=          '<h3 class="artist-title">' + topAlbum[i].title +'</h3>'
+            art +=          '<h3 class="album-title">' + topAlbum[i].title +'</h3>'
             art +=      '</a>'
+            art +=      '<p class="fecha">'+ topAlbum[i].release_date + '</p>'
             art +=      '</div>'
             art += '</div>'
 
@@ -60,14 +61,14 @@ fetch(url)
        
            let art = ''
            
-           art += '<div class="music">'
+           art += '<div class="music-artist">'
            art +=      '<a href="detalleartist.html?id='+topArtist.id+ '">'
            art +=          '<img class="portadas mobile radius" src="' + topArtist.picture_medium + '">'
            art +=      '</a>'
            art +=      '<a href="detalleartist.html?id='+topArtist.id+ '">'
            art +=      '<div class="artist-title-div">'
-           art +=          '<h3 class= "artist-title mrg-btn ">' +topArtist.name + '</h3>'
-           art +=          '<h5 class= "artist-title mrg-btn ">' +'Seguidores: ' +topArtist.nb_fan + '</h5>'
+           art +=          '<h3 class= "artist-title  ">' +topArtist.name + '</h3>'
+           art +=          '<h3 class= "artist-info ">' +'Seguidores: ' +topArtist.nb_fan + '</h3>'
            art +=      '</div>'
            art +=      '</a>'
            art += '</div>'
@@ -107,18 +108,16 @@ if(idsong in localStorage) {
         for(var i=1; i<listaTemas.length; i++){
             
             let gnr = ''
-            gnr += 		'<div class="music laptop mrg-btn">'
+            gnr += 		'<div class="music laptop ">'
           	gnr +=          '<p class="puesto">' +[i]+ '° </p>'
-            gnr +=          '<a href="detallealbum.html?id='+ listaTemas[i].id+ '">'
-            gnr +=              '<div class="div-img">'
-            gnr +=                  '<img class="portadas mobile laptop autoheight filtro" src="' + listaTemas[i].album.cover_medium + '">'
-            gnr +=              '</div>'
-            gnr +=          '</a>'
-            gnr +=          '<article>'
-            gnr +=              '<h3 class= "gnr-title" style="color:white;margin-left:10px" >' +listaTemas[i].title + '<button style="margin-left:5px;" onclick="cancionAplaylist(\''+listaTemas[i].id + '\' )"> <i class="fa fa-plus" aria-hidden="true"></i></button></h3>'
-            gnr +=   	        '<audio class="player" onplay="añadirRecientes(\''+listaTemas[i].id + '\' ) "controls= "audio"' + ' source src="' + listaTemas[i].preview +' " type="audio/mpeg" style="margin-left:31px;margin-bottom:7px;">'
+            gnr +=          '<div class="div-p">'
+            gnr +=              '<a href="detalletrack.html?id='+listaTemas[i].id+ '">'
+            gnr +=                  '<h3 class= "gnr-title" style="color:white;margin-left:10px" >' +listaTemas[i].title + '</h3>'
+            gnr +=              '</a>'
+            gnr +=              '<button class="button" style="margin-left:5px;" onclick="cancionAplaylist(\''+listaTemas[i].id + '\' )"> <i class="fa fa-plus" aria-hidden="true"></i></button>'
+          gnr +=   	        '<audio class="player" onplay="añadirRecientes(\''+listaTemas[i].id + '\' ) "controls= "audio"' + ' source src="' + listaTemas[i].preview +' " type="audio/mpeg">' 
             gnr +=   	        '</audio>' 
-            gnr +=          '</article>';
+            gnr +=          '</div>';
             gnr +=      '</div>'
             container.innerHTML += gnr;
             
