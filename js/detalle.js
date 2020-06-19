@@ -27,7 +27,7 @@ fetch (url)
          let data = top.data ; 
          let fran = document.querySelector ('.top') ;
          for ( let i = 0 ; i<5 ; i++) {
-         fran.innerHTML += '<li> <h1>' + data [i].title + '</h1> <audio controls> <source src = "' + data[i].link + '" type="audio/mpeg"></audio></li>';
+         fran.innerHTML += '<li> <h1>' + data [i].title + '</h1> <audio controls class= "audio"> <source src = "' + data[i].link + '" type="audio/mpeg"></audio></li>';
 }
 
 
