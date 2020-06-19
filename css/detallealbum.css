@@ -101,18 +101,21 @@
 
     .tituloalbum{
         font-size: 30px;
-        text-align: center;
-        height: auto;
+        text-align: center; 
         position: relative;
-        margin-bottom: 0px;
+        margin: auto;
+        display: inline;
        
     }
     .artistname{
+        height: min-content;
         text-align: center;
+        margin: auto;
        
     }
     .salidaalbum{
         text-align: center;
+        display: inline;
         
     }
     
