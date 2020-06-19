@@ -120,6 +120,7 @@ body.body{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     text-align: center;
+    z-index: 1;
 }
 div article a{
     text-align: center;

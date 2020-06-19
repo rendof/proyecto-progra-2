@@ -100,7 +100,7 @@
                 
                 art += '<div class="music laptop mrg-btn">'
                 art +=      '<p class="puesto">' +[i+1]+ '° </p>'
-                art +=      '<a href="detallealbum.html?id='+ topTracks[i].id+ '">'
+                art +=      '<a href="detalletrack.html?id='+ topTracks[i].id+ '">'
                 art +=      '<div class="div-img">'
                 art +=           '<img class="portadas mobile laptop autoheight filtro" src="' + topTracks[i].album.cover_medium + '">'
                 art +=      '</div>'
@@ -109,7 +109,7 @@
                 art +=      '<a href="detalletrack.html?id='+ topTracks[i].id+ '">'
                 art +=          '<h3 class="artist-title">' + topTracks[i].title +'</h3>'
                 art +=      '</a>'
-                art +=      '<a href="detallealbum.html?id='+ topTracks[i].id+ '">'
+                art +=      '<a href="detalleartist.html?id='+ topTracks[i].id+ '">'
                 art +=          '<p class= "artist-info">' + topTracks[i].artist.name + '</p>'
                 art +=      '</a>'
                 art +=      '</div>'
