@@ -18,11 +18,12 @@ fetch (url)
     nombreAlbum.innerHTML = '<h1>' + detalle.title + '</h1>' ;
 
     let nombreArtist = document.querySelector ('.artistname') ;
-    nombreArtist.innerHTML = '<h2>' + detalle.artist.name + '</h2>' ;
+    nombreArtist.innerHTML = '<a class="artist" href = "detalleartist.html?id='+detalle.artist.id+'"><h2>' + detalle.artist.name + '</h2>' ;
 
     let imagenArtista = document.querySelector ('.hola') ;
-    imagenArtista.innerHTML = '<img src="' + detalle.artist.picture_big + '">';
+    imagenArtista.innerHTML = '<img class="img" src="' + detalle.artist.picture_big + '">';
 
     let salidaAlbum = document.querySelector ('.salidaalbum') ;
-    salidaAlbum.innerHTML = '<h3>' +detalle.release_date + '</h3>' ;
+    salidaAlbum.innerHTML = '<h3>'+ 'Álbum • ' +detalle.release_date + '</h3>' ;
 })
+

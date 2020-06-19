@@ -45,7 +45,6 @@
 .agregar{
     display: grid;
     grid-template-columns: 2fr 1fr;
-    margin-bottom: 0px;
     height: 30%;
 }
 
@@ -63,7 +62,6 @@
     text-align: center;
     position: relative;
     font-size: 6px;
-    opacity: 30%;
     font-weight: 100px;
 }
 
@@ -72,11 +70,40 @@
     transform: translateY(2px);
 
 }
+.cositas{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
 
+}
+
+
+.corazon{
+    position: relative;
+    right: 20px;   
+    top: 25px
+}
+#heart{
+    color:  #ff1e56;
+    font-size: 20px;
+    opacity: 50%;
+}
+
+#heart:hover{
+    transform: translateY(2px);
+}
 .cancion {
     display: block;
     margin: auto;
-    width: 70%;
+    width: 50%;
+ 
+    
+}
+
+.audio{
+    display: block;
+    position: relative;
+    left: 15%;
+  
 }
 .duracion {
     text-align: center;
@@ -87,7 +114,14 @@
     
 }
 
+.nombrealbum:hover{
+    transform: translateY(2px);
+}
 
+.link {
+    color:white;
+    text-decoration: none;
+}
 
 
 /* Tablet */
@@ -110,6 +144,15 @@
       width: 50px;
       font-size: 25px;
   }
+  .corazon{
+      position: relative;
+      right: 30px;
+      top: 10px;
+  }
+  #heart
+  {
+      font-size: 30px;
+  }
 }
 
 /* compu */
@@ -127,5 +170,17 @@
 .imagen{
     width: 35%;
 }
-   
+   .corazon{
+    right: 500px;   
+    top: 780px
+   }
+
+   .corazon{
+       position: relative;
+    right: 60px;
+    top: 10px;
+   }
+   #heart{
+    font-size: 40px;
+   }
 }
