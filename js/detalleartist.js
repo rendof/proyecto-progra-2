@@ -14,6 +14,7 @@ let songsesion = null;
 let id = 0; 
 let datosalbum= null;
 
+console.log(url)
 
 fetch(urlalbums)
     .then(function(response){
@@ -27,7 +28,7 @@ fetch(urlalbums)
         for(var i=0; i<10; i++){
             let art = ''
             
-            art += '<div class="music">'
+            art += '<div class="music-album">'
             art +=      '<a href="detallealbum.html?id='+ topAlbum[i].id+ '">'
             art +=      '<div class="div-img">'
             art +=          '<img class="portadas mobile cuadrado" src="' + topAlbum[i].cover_medium + '">'
@@ -101,6 +102,7 @@ if(idsong in localStorage) {
     .then(function(datos){
         temas=datos;
         
+        console.log(datos)
         let container = document.querySelector(".content_tracks");
         let listaTemas = temas.data;
         
@@ -108,14 +110,18 @@ if(idsong in localStorage) {
         for(var i=1; i<listaTemas.length; i++){
             
             let gnr = ''
-            gnr += 		'<div class="music laptop ">'
-          	gnr +=          '<p class="puesto">' +[i]+ '° </p>'
-            gnr +=          '<div class="div-p">'
+            gnr += 		'<div class="music-track">'
+            gnr +=          '<div class="div-info">'
+            gnr +=              '<p class="puesto">' +[i]+ '° </p>'
             gnr +=              '<a href="detalletrack.html?id='+listaTemas[i].id+ '">'
-            gnr +=                  '<h3 class= "gnr-title" style="color:white;margin-left:10px" >' +listaTemas[i].title + '</h3>'
+            gnr +=                  '<div class="div-p">'
+            gnr +=                      '<h3 class= "gnr-title" style="color:white;margin-left:10px" >' +listaTemas[i].title + '</h3>'
+            gnr +=                  '</div>'
             gnr +=              '</a>'
             gnr +=              '<button class="button" style="margin-left:5px;" onclick="cancionAplaylist(\''+listaTemas[i].id + '\' )"> <i class="fa fa-plus" aria-hidden="true"></i></button>'
-          gnr +=   	        '<audio class="player" onplay="añadirRecientes(\''+listaTemas[i].id + '\' ) "controls= "audio"' + ' source src="' + listaTemas[i].preview +' " type="audio/mpeg">' 
+            gnr +=          '</div>'
+            gnr +=          '<div class="audio-div">'
+            gnr +=   	        '<audio class="player" onplay="añadirRecientes(\''+listaTemas[i].id + '\' ) "controls= "audio"' + ' source src="' + listaTemas[i].preview +' " type="audio/mpeg">' 
             gnr +=   	        '</audio>' 
             gnr +=          '</div>';
             gnr +=      '</div>'

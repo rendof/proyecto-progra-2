@@ -50,7 +50,7 @@ a{
     display: flex;
     flex-direction: column;
 }
-.music{
+.music-album{
     display: flex;
     flex-direction: row;
     padding: 10px;
@@ -58,6 +58,16 @@ a{
     text-align: left;
     border-bottom: 1px rgba(70, 69, 69, 0.315) solid;
     align-items: center;
+}
+.music-track{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color:  #2b29299d;
+    text-align: left;
+    border-bottom: 1px rgba(70, 69, 69, 0.315) solid;
+    align-items: center;
+    margin-bottom: 10px;
 }
 .music-artist{
     display: flex;
@@ -67,7 +77,7 @@ a{
     justify-content: left;
     border-bottom: 1px rgba(70, 69, 69, 0.315) solid;
     align-items: center;
-    border-radius: 50px;
+    border-radius: 20px;
 }
 
 .music a{
@@ -107,12 +117,15 @@ a{
     margin-bottom: 0px;
     color: white;
     font-size: 1rem;
+    flex: 1;
 }
 .gnr-title{
     text-align: left;
     margin: 0px;
     font-size: 1rem;
     font-weight: 600;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 .mrg-btn{
     margin-bottom: 10px;
@@ -152,9 +165,12 @@ a{
     width: 55px;
 }
 .player{
-    height: 40px;
+    height: 30px;
     margin: 0px;
-    width: 210px;
+    width: 100%;
+}
+.audio-div{
+    width: 100%;
 }
 .fecha{
     font-size: 0.8rem;
@@ -162,12 +178,18 @@ a{
     margin: 0px;
     margin-top: 5px;
 }
-.div-p{
+.div-info{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: start;
     width: 100%;
     align-items: center;
+}
+.div-p{
+    width: 180px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 .button{
     width: 25px;
@@ -178,6 +200,9 @@ a{
     background:linear-gradient(to bottom, #ff1e56, #ffac41);;
     border-radius: 100%;
     font-size: 10px;
+}
+.first{
+    margin-top: 0px;
 }
 /* Tablet */
 @media (min-width: 768px){
@@ -231,15 +256,11 @@ a{
         }
         .artist-info{
             margin-left: 15px;
+            text-align: left;
         }
         /*CLASES*/
         .mas{
             grid-column: 1/3;
-        }
-        .laptop{
-            display: flex;
-            flex-direction: row;
-            
         }
         .autoheight{
             height: 70px;
