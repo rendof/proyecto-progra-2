@@ -71,7 +71,7 @@
                 art +=          '<img class="portadas mobile cuadrado" src="' + topAlbum[i].cover_medium + '">'
                 art +=      '</div>'
                 art +=      '</a>'
-                art +=      '<div id="div-alb"'
+                art +=      '<div id="div-alb">'
                 art +=      '<a href="detallealbum.html?id='+ topAlbum[i].id+ '">'
                 art +=          '<h3 class="artist-title">' + topAlbum[i].title +'</h3>'
                 art +=      '</a>'
