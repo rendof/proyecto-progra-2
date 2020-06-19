@@ -189,6 +189,10 @@ footer article{
 .ctr-img{
 text-align: right;
 }
+.ap{
+    color: white;
+    text-decoration: none;
+}
 /* Tablet */
 @media (min-width: 768px){
     .logo{
