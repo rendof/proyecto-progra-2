@@ -67,7 +67,7 @@ a{
     justify-content: left;
     border-bottom: 1px rgba(70, 69, 69, 0.315) solid;
     align-items: center;
-    border-radius: 50px;
+    border-radius: 20px;
 }
 
 .music a{
@@ -231,6 +231,7 @@ a{
         }
         .artist-info{
             margin-left: 15px;
+            text-align: left;
         }
         /*CLASES*/
         .mas{

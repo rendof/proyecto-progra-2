@@ -115,7 +115,7 @@ if(idsong in localStorage) {
             gnr +=                  '<h3 class= "gnr-title" style="color:white;margin-left:10px" >' +listaTemas[i].title + '</h3>'
             gnr +=              '</a>'
             gnr +=              '<button class="button" style="margin-left:5px;" onclick="cancionAplaylist(\''+listaTemas[i].id + '\' )"> <i class="fa fa-plus" aria-hidden="true"></i></button>'
-         /* gnr +=   	        '<audio class="player" onplay="añadirRecientes(\''+listaTemas[i].id + '\' ) "controls= "audio"' + ' source src="' + listaTemas[i].preview +' " type="audio/mpeg">' */
+          gnr +=   	        '<audio class="player" onplay="añadirRecientes(\''+listaTemas[i].id + '\' ) "controls= "audio"' + ' source src="' + listaTemas[i].preview +' " type="audio/mpeg">' 
             gnr +=   	        '</audio>' 
             gnr +=          '</div>';
             gnr +=      '</div>'
