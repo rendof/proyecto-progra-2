@@ -139,8 +139,9 @@
 }
 
 .agregar{
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
+    grid-template-columns: 2fr 1fr;
+    justify-content: right;
+    
 }
 
 .imagen{
